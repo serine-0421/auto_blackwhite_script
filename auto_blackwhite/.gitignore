@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Project specific
+logs/
+data/
+*.log
+*.png
+*.jpg
+*.bmp
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+*.orig
