@@ -1,5 +1,5 @@
 # 图像识别（数字OCR、规划队列圆圈检测、职位文字）
-# core/recognizer.py
+
 import cv2
 import numpy as np
 import pytesseract
