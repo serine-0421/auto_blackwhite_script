@@ -6,7 +6,7 @@ import logging
 from core.connector import DeviceConnector
 from core.controller import GameController
 from core.recognizer import Recognizer
-from fsm.state_machine import GameStateMachine
+from auto_blackwhite.fsm.machine import GameStateMachine
 from tasks.tishen import TishenTask
 from config.settings import DEVICE_ADDR
 from utils.logger import setup_logger

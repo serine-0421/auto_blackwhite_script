@@ -1,5 +1,5 @@
 # 状态机主类（加载状态、执行迁移）
-# fsm/state_machine.py
+
 import time
 import logging
 from fsm.context import GameContext
