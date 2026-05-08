@@ -1,16 +1,93 @@
-# Auto Black & White 自动化脚本
+﻿# Auto Black & White 自动化脚本
 
-一个基于状态机、图像识别和模拟器控制的游戏自动化项目，目标是在 Android 模拟器（如 LDPlayer）中自动执行游戏流程。
-## 主要特点
+一个基于状态机、图像识别和模拟器控制的游戏自动化项目，目标是在 Android 模拟器（如 LDPlayer）中自动执行游戏流程并完成核心操作。
 
-- 通过 `uiautomator2` 连接和控制 Android 模拟器
-- 采用状态机 `GameStateMachine` 管理游戏流程
-- `GameController` 提供带锁的点击、滑动、截图与设备操作
-- `Recognizer` 使用 `pytesseract` 和 `opencv-python` 做 OCR 数字识别、圆形检测与文字识别
-- `TishenTask` 独立线程定时检查并自动完成提神
-- 日志输出到 `logs/game.log`，支持文件和控制台双输出
+## 特色
 
-## 目录结构
+- 使用 `uiautomator2` 连接并控制 Android 模拟器
+- 基于状态机 `GameStateMachine` 管理游戏流程和状态迁移
+- `GameController` 提供带锁的点击、滑动、返回、截图和像素读取
+- `Recognizer` 结合 `opencv-python` 与 `pytesseract` 实现数字 OCR、圆形检测和文本识别
+- `TishenTask` 作为独立任务周期性检查并自动执行提神流程
+- 日志输出到 `logs/game.log`，并同步打印到控制台
+
+## 依赖
+
+- Python 3.8+
+- uiautomator2
+- opencv-python
+- pillow
+- pytesseract
+
+## 安装
+
+建议使用虚拟环境：
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r auto_blackwhite/requirements.txt
+```
+
+## 运行
+
+在项目根目录执行：
+
+```bash
+python auto_blackwhite/main.py
+```
+
+运行后会：
+
+1. 初始化日志系统
+2. 连接 Android 模拟器
+3. 启动提神任务线程
+4. 启动状态机主循环
+
+## 配置
+
+主要配置位于 `auto_blackwhite/config/settings.py`：
+
+- `DEVICE_ADDR`：ADB 设备地址
+- `TISHEN_*`：提神检测区域、点击坐标和选项坐标
+- `TALENT_POSITIONS`：选天赋的坐标列表
+- `TIME_ALLOC_BUTTON` / `WORK_TIME_SLIDER` / `RESEARCH_PLUS_BUTTON`：时间分配界面坐标
+- `PLAN_QUEUE_BUTTON` / `PLAN_QUEUE_CIRCLE_REGION`：规划队列入口和圆圈识别区域
+- `SELF_IMPROVE_BUTTON` / `VITALITY_RESEARCH_REGION` / `VITALITY_TARGET_LEVEL`：自我提升与活力研究配置
+- `WORK_BUTTON` / `RESEARCH_TAB`：工作与科研界面按钮位置
+- `INCOME_REGION` / `INCOME_THRESHOLD`：净收入识别区域和阈值
+- `LIFE_BUTTON` / `EMPLOY_BUTTON` / `RESEARCH_ASSISTANT`：雇佣助理流程所需坐标
+- `POSITION_REGION` / `DIRECTOR_LEVEL_THRESHOLD`：职位识别区域和等级阈值
+- `TRAFFIC_BUTTON` / `SCROLL_START` / `SCROLL_END` / `CAR_BUTTON_TEMPLATE`：买车升级界面参数
+- `SETTLEMENT_REGION` / `SETTLEMENT_CLICK_POS`：结算界面检测和点击位置
+- `SHORT_WAIT`, `MEDIUM_WAIT`, `LONG_WAIT`：全局等待间隔
+
+> 注意：当前配置中的多数坐标为占位值，必须根据实际游戏界面和模拟器分辨率重新校准。
+
+## 核心模块
+
+### `auto_blackwhite/main.py`
+入口脚本，负责初始化日志、连接设备、创建控制器与识别器、启动提神任务和状态机。
+
+### `auto_blackwhite/core/connector.py`
+设备连接管理模块，封装 `uiautomator2` 连接与重试逻辑，并支持 ADB 环境修复。
+
+### `auto_blackwhite/core/controller.py`
+基础控制模块，提供带锁的点击、滑动、返回、截图与像素读取，并加上重试机制。
+
+### `auto_blackwhite/core/recognizer.py`
+图像识别模块，负责 OCR 数字识别、圆形检测和文字识别。
+
+### `auto_blackwhite/fsm/machine.py`
+状态机引擎，负责注册状态、执行状态逻辑并进行状态迁移。
+
+### `auto_blackwhite/tasks/tishen.py`
+提神任务模块，实现独立轮询任务，自动识别并完成提神流程。
+
+### `auto_blackwhite/utils/logger.py`
+日志配置模块，支持环形日志文件与控制台输出。
+
+## 项目结构
 
 ```
 auto_blackwhite/
@@ -51,107 +128,20 @@ auto_blackwhite/
     logger.py
 ```
 
-## 安装依赖
+## 当前状态与改进点
 
-推荐使用虚拟环境后安装依赖：
+- 已实现设备连接、控制器、识别器、状态机框架和提神任务
+- 当前 `config/settings.py` 中坐标与识别区域仍为占位值，需要校准
+- 识别逻辑依赖 `pytesseract` 与 `opencv-python`，建议在真实游戏界面中调试
+- 需要补充更多状态执行逻辑、稳定性与异常恢复处理
 
-```bash
-pip install -r auto_blackwhite/requirements.txt
-```
+## 使用建议
 
-## 运行方式
+1. 安装并配置 `tesseract` OCR 引擎
+2. 启动模拟器并确认 `adb connect <DEVICE_ADDR>` 成功
+3. 调整 `auto_blackwhite/config/settings.py` 中的坐标与区域配置
+4. 逐步运行并观察 `logs/game.log` 日志输出，定位问题
 
-在项目根目录运行：
+## 贡献
 
-```bash
-python auto_blackwhite/main.py
-```
-
-脚本会执行：
-
-1. 连接模拟器设备
-2. 初始化 `GameController` 和 `Recognizer`
-3. 启动 `TishenTask` 提神线程
-4. 启动状态机主循环执行游戏流程
-
-## 配置说明
-
-核心配置在 settings.py 中管理，包括：
-
-- `DEVICE_ADDR`：ADB 设备地址
-- `TISHEN_*`：提神检测、点击区域与选项坐标
-- `TALENT_POSITIONS`：选天赋坐标
-- `TIME_ALLOC_BUTTON` / `WORK_TIME_SLIDER` / `RESEARCH_PLUS_BUTTON`：时间分配界面坐标
-- `PLAN_QUEUE_BUTTON` / `PLAN_QUEUE_CIRCLE_REGION`：规划队列按钮与圆圈识别区域
-- `SELF_IMPROVE_BUTTON` / `VITALITY_RESEARCH_REGION` / `VITALITY_TARGET_LEVEL`：活力研究相关配置
-- `WORK_BUTTON` / `RESEARCH_TAB`：工作/科研按钮位置
-- `INCOME_REGION` / `INCOME_THRESHOLD`：净收入识别区域与阈值
-- `LIFE_BUTTON` / `EMPLOY_BUTTON` / `RESEARCH_ASSISTANT`：雇佣助理流程坐标
-- `POSITION_REGION` / `DIRECTOR_LEVEL_THRESHOLD`：职位识别区域与等级阈值
-- `TRAFFIC_BUTTON` / `SCROLL_START` / `SCROLL_END` / `CAR_BUTTON_TEMPLATE`：买车升级界面坐标和模板
-- `SETTLEMENT_REGION` / `SETTLEMENT_CLICK_POS`：结算检测与点击位置
-- 全局等待时间：`SHORT_WAIT`、`MEDIUM_WAIT`、`LONG_WAIT`
-
-> 注意：当前坐标配置多为占位值，必须根据实际游戏界面和模拟器分辨率重新校准。
-
-## 核心模块
-
-### main.py
-项目入口，负责：
-- 初始化日志
-- 连接设备
-- 启动提神线程
-- 启动状态机循环
-
-### connector.py
-负责连接模拟器设备，并在连接断开时自动重试。
-
-### controller.py
-提供：
-- `click()`
-- `swipe()`
-- `press_back()`
-- `screenshot()`
-- `get_pixel_color()`
-
-使用 `threading.RLock()` 和 `_safe_exec()` 进行线程安全执行与重试处理。
-
-### recognizer.py
-提供图像识别能力：
-- 数字 OCR：`read_number()`
-- 圆形检测：`has_circle()`
-- 文本识别：`read_text()`
-
-### machine.py
-实现状态机：
-- `GameStateMachine`
-- 注册多个游戏状态
-- 通过 `transition_to()` 执行状态迁移
-- `run()` 进行主循环
-
-### tishen.py
-独立提神处理线程，周期性检查是否可提神并自动点击提神选项。
-
-### logger.py
-日志配置模块，使用 `RotatingFileHandler` 记录日志文件，同时输出控制台。
-
-## 当前实现状态与改进点
-
-- `GameController` 已实现线程安全执行与重试框架
-- `Recognizer` 包含 OCR、圆圈检测、文字识别基础能力
-- 状态机框架已搭建完毕，包含完整流程状态注册
-- `TishenTask` 已实现提神周期检测与自动操作
-
-待完善项：
-
-- 需要校准所有坐标与识别区域
-- 部分接口调用（如 `TishenTask` 的 `ocr_number` / `safe_click`）目前与 `Recognizer`/`GameController` 方法命名存在不一致，需要统一
-- 需要补充具体界面识别与状态执行逻辑
-- 建议补强异常恢复、超时处理和业务级重试
-
-## 贡献建议
-
-- 补全各状态的实际游戏操作逻辑
-- 增加更稳定的图像识别与模板匹配
-- 添加单元测试与流程回归测试
-- 提供坐标标定工具或界面校对脚本
+欢迎补充状态执行逻辑、增强识别算法、完善异常处理、添加测试及坐标校准工具。
