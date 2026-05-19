@@ -89,6 +89,13 @@ class Recognizer:
 
         return text
 
+    def detect_plan_queue_circle(self, region):
+        img = self.controller.screenshot()
+        if img is None:
+            logger.debug("detect_plan_queue_circle: screenshot failed")
+            return False
+        return self.has_circle(img, region)
+
     def ocr_number(self, region):
         img = self.controller.screenshot()
         if img is None:
