@@ -1,0 +1,191 @@
+[2026-05-19 19:00:59,729] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:01:42,454] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:01:42,454] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:01:42,454] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:01:42,454] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'Recognizer' object has no attribute 'ocr_number'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Recognizer' object has no attribute 'ocr_number'. Did you mean: 'read_number'?
+[2026-05-19 19:01:42,455] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:01:42,456] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:01:42,456] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:01:42,456] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:01:42,456] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:02:45,838] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:02:45,838] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:02:45,838] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:02:45,838] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:02:45,838] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:02:45,839] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:02:45,839] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:02:45,839] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:02:45,839] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:02:46,339] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:02:47,537] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:02:47,537] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:02:47,570] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:02:48,038] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if num > 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:02:48,038] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:48,566] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:49,591] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:51,608] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:52,132] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:53,158] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:55,183] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:55,712] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:56,734] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:58,065] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:02:58,565] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if num > 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:02:58,735] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-19 19:02:58,735] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-19 19:02:58,735] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-19 19:02:58,735] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-19 19:02:59,260] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:02:59,775] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:00,802] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:03,303] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-19 19:03:03,326] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:03,854] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:04,879] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:06,505] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:07,031] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:08,058] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:08,594] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:03:09,095] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if num > 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:03:09,683] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:10,211] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:11,228] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:12,853] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:13,379] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:14,405] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:16,021] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:16,547] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:17,572] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:19,110] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:03:19,611] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if not isinstance(num, int) or num <= 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:03:19,611] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:20,145] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:21,180] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:22,806] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:23,321] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:24,343] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:25,968] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:26,483] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:27,499] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:29,129] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:29,637] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:03:30,137] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if not isinstance(num, int) or num <= 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:03:30,137] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:31,163] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:32,789] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:33,314] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:34,340] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:35,966] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:36,491] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:37,519] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:39,146] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:39,672] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:40,164] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:03:40,665] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if not isinstance(num, int) or num <= 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:03:40,687] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:42,313] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:42,838] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:43,862] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:45,493] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:46,009] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:47,034] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:48,660] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:49,185] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:50,211] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:50,690] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:03:51,191] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if not isinstance(num, int) or num <= 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:03:51,838] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:52,353] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:53,370] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:54,998] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:55,524] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:56,552] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:58,178] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:58,704] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:03:59,729] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:01,216] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:04:01,716] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: '>' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 19, in execute
+    if not isinstance(num, int) or num <= 0:
+       ^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+[2026-05-19 19:04:01,716] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:02,243] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:03,269] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:04,883] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:05,398] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:06,424] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:04:08,039] [WARNING] [controller.py:26] [GameBot] [back] failed 1/1: 'NoneType' object has no attribute 'press'
+[2026-05-19 19:04:09,041] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-19 19:04:09,041] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-19 19:04:09,041] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState

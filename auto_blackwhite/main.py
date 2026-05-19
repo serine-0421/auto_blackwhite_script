@@ -1,13 +1,23 @@
 # 入口：启动状态机 + 启动提神轮询线程
 # main.py
+import os
+import sys
 import threading
 import time
 import logging
+
+PACKAGE_DIR = os.path.dirname(__file__)
+ROOT_DIR = os.path.dirname(PACKAGE_DIR)
+if PACKAGE_DIR not in sys.path:
+    sys.path.insert(0, PACKAGE_DIR)
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+
 from core.connector import DeviceConnector
 from core.controller import GameController
 from core.recognizer import Recognizer
-from auto_blackwhite.fsm.machine import GameStateMachine
-from tasks.tishen import TishenTask
+from fsm.machine import GameStateMachine
+from tasks.workers.tishen_task import TishenTask
 from config.settings import DEVICE_ADDR
 from utils.logger import setup_logger
 
@@ -20,8 +30,8 @@ def main():
     controller = GameController(connector)
     recognizer = Recognizer(controller)
     
-    # 启动提神线程
-    tishen = TishenTask(controller, recognizer)
+    # 启动提神线程（与状态机共享 controller.lock）
+    tishen = TishenTask(controller, recognizer, controller.lock)
     t = threading.Thread(target=tishen.run_loop, daemon=True)
     t.start()
     logger.info("提神线程已启动")

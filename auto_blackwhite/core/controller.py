@@ -45,6 +45,9 @@ class GameController:
 
         return self._safe_exec(_, "swipe", retry)
 
+    def safe_click(self, x, y, retry=3):
+        return self.click(x, y, retry)
+
     def press_back(self):
         def _():
             self.device.press("back")

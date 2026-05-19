@@ -9,8 +9,8 @@ logger = logging.getLogger("GameBot")
 
 
 class Recognizer:
-    def __init__(self, config):
-        self.config = config
+    def __init__(self, controller):
+        self.controller = controller
 
     # 基础工具
 
@@ -88,3 +88,9 @@ class Recognizer:
         ).strip()
 
         return text
+
+    def ocr_number(self, region):
+        img = self.controller.screenshot()
+        if img is None:
+            return None
+        return self.read_number(img, region)
