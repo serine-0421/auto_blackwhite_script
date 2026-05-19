@@ -189,3 +189,208 @@ TypeError: '>' not supported between instances of 'NoneType' and 'int'
 [2026-05-19 19:04:09,041] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
 [2026-05-19 19:04:09,041] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
 [2026-05-19 19:04:09,041] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-19 19:09:20,575] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:09:20,575] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:09:20,576] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:09:20,576] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:09:20,576] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:09:20,576] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:09:20,576] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:09:20,576] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:09:20,576] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:09:21,077] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:09:21,285] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:09:21,286] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:09:21,343] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:09:21,786] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:22,310] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:23,336] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:25,364] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:25,889] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:26,915] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:28,929] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:29,457] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:30,482] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:31,805] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:09:32,483] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-19 19:09:32,484] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-19 19:09:32,484] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-19 19:09:32,484] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-19 19:09:33,012] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:33,526] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:34,553] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:37,054] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-19 19:09:37,079] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:37,604] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:38,630] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:40,256] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:40,783] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:41,807] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:42,331] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:09:43,434] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:43,959] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:44,986] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:46,611] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:47,138] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:48,162] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:49,788] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:50,328] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:51,353] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:52,856] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:09:53,357] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:53,883] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:54,907] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:56,535] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:57,049] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:58,074] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:09:59,704] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:00,230] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:01,259] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:02,889] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:03,389] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:10:03,890] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:04,916] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:06,541] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:07,056] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:08,082] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:09,709] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:10,235] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:11,261] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:12,887] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:13,413] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:13,905] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:10:14,438] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:16,075] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:16,612] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:17,628] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:19,245] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:19,772] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:20,798] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:22,415] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:22,940] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:23,964] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:24,431] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:10:25,591] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:26,115] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:27,141] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:28,767] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:29,293] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:30,309] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:31,934] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:32,463] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:33,489] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:34,947] [WARNING] [controller.py:26] [GameBot] [screenshot] failed 1/1: 'NoneType' object has no attribute 'screenshot'
+[2026-05-19 19:10:35,448] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:35,962] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:36,990] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:38,605] [WARNING] [controller.py:26] [GameBot] [click] failed 1/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:39,130] [WARNING] [controller.py:26] [GameBot] [click] failed 2/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:40,144] [WARNING] [controller.py:26] [GameBot] [click] failed 3/3: 'NoneType' object has no attribute 'click'
+[2026-05-19 19:10:41,761] [WARNING] [controller.py:26] [GameBot] [back] failed 1/1: 'NoneType' object has no attribute 'press'
+[2026-05-19 19:10:42,763] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-19 19:10:42,763] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-19 19:10:42,763] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-19 19:15:39,972] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:15:39,972] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:15:39,972] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:15:39,972] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:15:39,972] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:15:39,972] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:15:39,973] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:15:39,973] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:15:39,973] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:15:40,473] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:15:40,668] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:15:40,736] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:15:40,813] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 96, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:15:42,760] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-19 19:15:42,760] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-19 19:15:42,760] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-19 19:15:42,760] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-19 19:15:44,411] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-19 19:15:50,937] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 96, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:15:51,364] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-19 19:15:51,365] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-19 19:15:51,365] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-19 19:16:07,769] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:16:07,769] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:16:07,769] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:16:07,769] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:16:07,769] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:16:07,770] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:16:07,770] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:16:07,770] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:16:07,770] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:16:08,270] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:16:08,462] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:16:08,527] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:16:08,607] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 96, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:16:10,571] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-19 19:16:10,571] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-19 19:16:10,571] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-19 19:16:10,571] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-19 19:16:12,231] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-19 19:16:18,755] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 96, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:16:19,189] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-19 19:16:19,189] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-19 19:16:19,189] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState

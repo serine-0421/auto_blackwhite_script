@@ -16,7 +16,7 @@ class TishenTask(BaseTask):
     def execute(self):
         # 识别圆圈数字
         num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
-        if not isinstance(num, int) or num <= 0:
+        if num is None or not isinstance(num, int) or num <= 0:
             logger.debug("提神次数为0或识别失败，跳过")
             return
 
