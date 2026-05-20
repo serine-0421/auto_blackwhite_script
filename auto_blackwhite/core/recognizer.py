@@ -16,7 +16,10 @@ class Recognizer:
 
     def _crop(self, img, region):
         x1, y1, x2, y2 = region
-        return img[y1:y2, x1:x2]
+        if isinstance(img, np.ndarray):
+            return img[y1:y2, x1:x2]
+        else:
+            return np.array(img.crop((x1, y1, x2, y2)))
 
     def _preprocess_for_ocr(self, img):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -38,19 +41,39 @@ class Recognizer:
 
     def read_number(self, img, region):
         crop = self._crop(img, region)
-        proc = self._preprocess_for_ocr(crop)
+        proc = self._preprocess_for_ocr(crop) 
 
-        text = pytesseract.image_to_string(
-            proc,
-            config='--psm 7 -c tessedit_char_whitelist=0123456789,'
-        ).strip()
-
-        text = text.replace(",", "")
-
-        if text.isdigit():
-            return int(text)
-
-        logger.debug(f"OCR failed: {text}")
+        configs = [
+        '--psm 7 -c tessedit_char_whitelist=0123456789', 
+        '--psm 8 -c tessedit_char_whitelist=0123456789',  
+        '--psm 13 -c tessedit_char_whitelist=0123456789', 
+        '--psm 6 -c tessedit_char_whitelist=0123456789',   
+        ]
+    
+        best_digits = None
+        for config in configs:
+            text = pytesseract.image_to_string(proc, config=config).strip()
+            digits = ''.join(ch for ch in text if ch.isdigit())
+            if digits:
+                best_digits = digits
+                break
+    
+        # 放大识别
+        if not best_digits:
+            h, w = proc.shape[:2]
+            if h < 30 or w < 50:  
+                proc_big = cv2.resize(proc, (w*2, h*2), interpolation=cv2.INTER_CUBIC)
+                for config in configs:
+                    text = pytesseract.image_to_string(proc_big, config=config).strip()
+                    digits = ''.join(ch for ch in text if ch.isdigit())
+                    if digits:
+                        best_digits = digits
+                        break
+    
+        if best_digits and best_digits.isdigit():
+            return int(best_digits)
+        
+        logger.debug(f"OCR failed for region {region}, raw text: {text}")
         return None
 
     # 圆形检测

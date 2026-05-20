@@ -1,5 +1,5 @@
 # 入口：启动状态机 + 启动提神轮询线程
-# main.py
+
 import os
 import sys
 import threading
@@ -29,7 +29,8 @@ def main():
     connector = DeviceConnector(DEVICE_ADDR)
     controller = GameController(connector)
     recognizer = Recognizer(controller)
-    
+    logger.info("控制器与识别器初始化完成")
+
     # 启动提神线程（与状态机共享 controller.lock）
     tishen = TishenTask(controller, recognizer, controller.lock)
     t = threading.Thread(target=tishen.run_loop, daemon=True)
@@ -38,7 +39,8 @@ def main():
     
     # 启动状态机主循环
     state_machine = GameStateMachine(controller, recognizer)
-    
+    logger.info("状态机初始化完成")
+
     # 注意：状态机和提神线程会同时操作controller，需要加锁避免冲突
     # 在controller的每个操作里加锁，或者通过共享锁机制。
     # 简单改进：在GameController中加入self.lock，所有操作方法都acquire。

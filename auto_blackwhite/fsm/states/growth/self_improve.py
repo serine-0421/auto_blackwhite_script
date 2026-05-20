@@ -1,5 +1,5 @@
 # 自我提升-活力研究（循环检测等级<150）
-# fsm/states/self_improve.py
+
 import time
 from fsm.state import State
 from config.settings import SELF_IMPROVE_BUTTON, VITALITY_RESEARCH_REGION, VITALITY_TARGET_LEVEL
@@ -14,7 +14,7 @@ class SelfImproveState(State):
         # 循环读取活力研究等级
         while True:
             level = recognizer.ocr_number(VITALITY_RESEARCH_REGION)
-            if level == -1:
+            if level is None or level == -1:
                 logger.warning("识别活力研究等级失败，重试")
                 time.sleep(3)
                 continue
