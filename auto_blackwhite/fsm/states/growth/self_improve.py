@@ -8,6 +8,11 @@ logger = logging.getLogger("GameBot")
 
 class SelfImproveState(State):
     def execute(self, context, controller, recognizer):
+        # 先检查 context
+        if context.energy_level >= TARGET_ENERGY:
+            logger.info("活力等级已达标，跳过SelfImproveState")
+            return "switch_to_work"
+
         # 进入自我提升界面
         controller.safe_click(*SELF_IMPROVE_BUTTON)
         time.sleep(1)
