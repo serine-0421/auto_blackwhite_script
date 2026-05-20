@@ -394,3 +394,55 @@ TypeError: 'JpegImageFile' object is not subscriptable
 [2026-05-19 19:16:19,189] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
 [2026-05-19 19:16:19,189] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
 [2026-05-19 19:16:19,189] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-19 19:20:27,723] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-19 19:20:27,723] [INFO] [base_task.py:22] [GameBot] 启动任务: TishenTask
+[2026-05-19 19:20:27,724] [INFO] [main.py:37] [GameBot] 提神线程已启动
+[2026-05-19 19:20:27,724] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:20:27,724] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-19 19:20:27,724] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-19 19:20:27,724] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-19 19:20:27,724] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-19 19:20:27,724] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-19 19:20:28,224] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-19 19:20:28,408] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:20:28,475] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-19 19:20:28,567] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 103, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:20:30,519] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-19 19:20:30,520] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-19 19:20:30,520] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-19 19:20:30,520] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-19 19:20:32,188] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-19 19:20:38,747] [ERROR] [base_task.py:28] [GameBot] 任务 TishenTask 执行异常: 'JpegImageFile' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\base\base_task.py", line 26, in run_loop
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\tasks\workers\tishen_task.py", line 18, in execute
+    num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 103, in ocr_number
+    return self.read_number(img, region)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 40, in read_number
+    crop = self._crop(img, region)
+  File "C:\Users\serine\auto_blackwhite_script\auto_blackwhite\core\recognizer.py", line 19, in _crop
+    return img[y1:y2, x1:x2]
+           ~~~^^^^^^^^^^^^^^
+TypeError: 'JpegImageFile' object is not subscriptable
+[2026-05-19 19:20:39,168] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-19 19:20:39,168] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-19 19:20:39,168] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
