@@ -22,8 +22,7 @@ class BaseTask:
         logger.info(f"启动任务: {self.__class__.__name__}")
         while self.running:
             try:
-                with self.lock:
-                    self.execute()
+                self.execute()
             except Exception as e:
                 logger.exception(f"任务 {self.__class__.__name__} 执行异常: {e}")
             # 等待间隔

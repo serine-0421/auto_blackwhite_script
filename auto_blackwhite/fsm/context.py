@@ -3,6 +3,8 @@
 class GameContext:
     def __init__(self):
         self.research_level = 0       # 活力研究等级
+        self.research_level_ts = 0    # 最近一次识别活力研究等级的时间戳
+        self.energy_level = 0
         self.net_income = 0           # 净收入
         self.current_position = None  # 职位字符串
         self.position_level = 0       # 职位等级（仅研究主任需要）
@@ -15,3 +17,9 @@ class GameContext:
         for key, value in kwargs.items():
             if hasattr(self, key):
                 setattr(self, key, value)
+                if key == 'research_level':
+                    try:
+                        import time
+                        self.research_level_ts = time.time()
+                    except Exception:
+                        self.research_level_ts = 0

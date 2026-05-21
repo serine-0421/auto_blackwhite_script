@@ -4,6 +4,7 @@ import time
 from fsm.state import State
 from config.settings import SELF_IMPROVE_BUTTON, VITALITY_RESEARCH_REGION, VITALITY_TARGET_LEVEL
 import logging
+TARGET_ENERGY = 150
 logger = logging.getLogger("GameBot")
 
 class SelfImproveState(State):
@@ -13,7 +14,18 @@ class SelfImproveState(State):
             logger.info("活力等级已达标，跳过SelfImproveState")
             return "switch_to_work"
 
-        # 进入自我提升界面
+        # 如果最近已经识别过活力研究等级（TTL 5 分钟），使用缓存避免重复识别
+        RECACHE_TTL = 300
+        if getattr(context, 'research_level_ts', 0) and (time.time() - context.research_level_ts) < RECACHE_TTL:
+            level = context.research_level
+            logger.info(f"使用缓存的活力研究等级: {level} (上次识别{int(time.time()-context.research_level_ts)}秒前)")
+            if level >= VITALITY_TARGET_LEVEL:
+                logger.info("缓存等级达标，跳过识别并进入下一状态")
+                return "switch_to_work"
+            else:
+                logger.info("缓存等级未达标，继续进入自我提升界面进行分配")
+
+        # 进入自我提升界面并读取活力研究等级
         controller.safe_click(*SELF_IMPROVE_BUTTON)
         time.sleep(1)
         # 循环读取活力研究等级
@@ -23,7 +35,11 @@ class SelfImproveState(State):
                 logger.warning("识别活力研究等级失败，重试")
                 time.sleep(3)
                 continue
-            context.research_level = level
+            # 使用 update_from_ocr 以便更新 context 中的时间戳
+            if hasattr(context, 'update_from_ocr'):
+                context.update_from_ocr(research_level=level)
+            else:
+                context.research_level = level
             logger.info(f"活力研究等级: {level}")
             if level >= VITALITY_TARGET_LEVEL:
                 logger.info("活力研究等级达标，进入下一状态")
