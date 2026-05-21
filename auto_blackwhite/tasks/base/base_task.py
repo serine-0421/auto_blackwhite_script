@@ -18,7 +18,11 @@ class BaseTask:
         self.interval = 0         # 子类应覆盖此值，单位秒
     
     def run_loop(self):
-        """任务主循环，在线程中执行"""
+        """任务主循环，在线程中执行
+
+        注意：Controller 自带锁保护每次 UI 操作，因此不应在整个 execute 期间持有锁。
+        否则会导致后台任务占用锁并阻塞主状态机，造成提神线程与主循环不兼容。
+        """
         logger.info(f"启动任务: {self.__class__.__name__}")
         while self.running:
             try:
