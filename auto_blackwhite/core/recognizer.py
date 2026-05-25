@@ -6,6 +6,7 @@ import pytesseract
 import logging
 
 logger = logging.getLogger("GameBot")
+OCR_TIMEOUT = 10
 
 
 class Recognizer:
@@ -51,24 +52,29 @@ class Recognizer:
         ]
     
         best_digits = None
-        for config in configs:
-            text = pytesseract.image_to_string(proc, config=config).strip()
-            digits = ''.join(ch for ch in text if ch.isdigit())
-            if digits:
-                best_digits = digits
-                break
+        text = ''
+        try:
+            for config in configs:
+                text = pytesseract.image_to_string(proc, config=config, timeout=OCR_TIMEOUT).strip()
+                digits = ''.join(ch for ch in text if ch.isdigit())
+                if digits:
+                    best_digits = digits
+                    break
     
-        # 放大识别
-        if not best_digits:
-            h, w = proc.shape[:2]
-            if h < 30 or w < 50:  
-                proc_big = cv2.resize(proc, (w*2, h*2), interpolation=cv2.INTER_CUBIC)
-                for config in configs:
-                    text = pytesseract.image_to_string(proc_big, config=config).strip()
-                    digits = ''.join(ch for ch in text if ch.isdigit())
-                    if digits:
-                        best_digits = digits
-                        break
+            # 放大识别
+            if not best_digits:
+                h, w = proc.shape[:2]
+                if h < 30 or w < 50:  
+                    proc_big = cv2.resize(proc, (w*2, h*2), interpolation=cv2.INTER_CUBIC)
+                    for config in configs:
+                        text = pytesseract.image_to_string(proc_big, config=config, timeout=OCR_TIMEOUT).strip()
+                        digits = ''.join(ch for ch in text if ch.isdigit())
+                        if digits:
+                            best_digits = digits
+                            break
+        except Exception as e:
+            logger.warning(f"OCR exception for region {region}: {e}")
+            return None
     
         if best_digits and best_digits.isdigit():
             return int(best_digits)
@@ -104,11 +110,16 @@ class Recognizer:
     def read_text(self, img, region):
         crop = self._crop(img, region)
 
-        text = pytesseract.image_to_string(
-            crop,
-            lang='chi_sim',
-            config='--psm 6'
-        ).strip()
+        try:
+            text = pytesseract.image_to_string(
+                crop,
+                lang='chi_sim',
+                config='--psm 6',
+                timeout=OCR_TIMEOUT
+            ).strip()
+        except Exception as e:
+            logger.warning(f"Text OCR exception for region {region}: {e}")
+            return ""
 
         return text
 
@@ -123,4 +134,8 @@ class Recognizer:
         img = self.controller.screenshot()
         if img is None:
             return None
-        return self.read_number(img, region)
+        try:
+            return self.read_number(img, region)
+        except Exception as e:
+            logger.warning(f"ocr_number failed for region {region}: {e}")
+            return None
