@@ -1740,3 +1740,416 @@ pytesseract.pytesseract.TesseractError: (3221225786, 'ObjectCache(00007ffd455c66
 [2026-05-21 13:02:22,927] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
 [2026-05-21 13:02:22,927] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
 [2026-05-21 13:02:22,927] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:13:53,574] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-21 13:13:53,575] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-21 13:13:53,575] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-21 13:13:53,575] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-21 13:13:53,575] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-21 13:13:53,575] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-21 13:13:53,575] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-21 13:13:53,575] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-21 13:13:53,575] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-21 13:13:53,575] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-21 13:13:53,575] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-21 13:13:54,076] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-21 13:13:54,267] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-21 13:13:54,364] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-21 13:13:56,395] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-21 13:13:56,396] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-21 13:13:56,396] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-21 13:13:56,396] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-21 13:13:58,068] [INFO] [time_allocate.py:20] [GameBot] 设置工作时间=4
+[2026-05-21 13:14:05,032] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-21 13:14:05,032] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-21 13:14:05,032] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:05,616] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:05,617] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:05,617] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:05,617] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:07,496] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 2
+[2026-05-21 13:14:07,496] [INFO] [self_improve.py:51] [GameBot] 等级不足2<150，等待3秒...
+[2026-05-21 13:14:10,713] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 2
+[2026-05-21 13:14:10,713] [INFO] [self_improve.py:51] [GameBot] 等级不足2<150，等待3秒...
+[2026-05-21 13:14:13,991] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 74
+[2026-05-21 13:14:13,991] [INFO] [self_improve.py:51] [GameBot] 等级不足74<150，等待3秒...
+[2026-05-21 13:14:17,268] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 4
+[2026-05-21 13:14:17,268] [INFO] [self_improve.py:51] [GameBot] 等级不足4<150，等待3秒...
+[2026-05-21 13:14:20,525] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 4
+[2026-05-21 13:14:20,525] [INFO] [self_improve.py:51] [GameBot] 等级不足4<150，等待3秒...
+[2026-05-21 13:14:23,784] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 74
+[2026-05-21 13:14:23,784] [INFO] [self_improve.py:51] [GameBot] 等级不足74<150，等待3秒...
+[2026-05-21 13:14:27,199] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-21 13:14:30,577] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-21 13:14:33,849] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 81608
+[2026-05-21 13:14:33,849] [INFO] [self_improve.py:45] [GameBot] 活力研究等级达标，进入下一状态
+[2026-05-21 13:14:35,603] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:35,603] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:35,603] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:37,428] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:37,428] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:37,428] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:37,428] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:38,031] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:38,031] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:38,031] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:38,032] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:38,532] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别4秒前)
+[2026-05-21 13:14:38,532] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:38,532] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:38,533] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:38,533] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:40,331] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:40,331] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:40,331] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:40,331] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:40,915] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:40,916] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:40,916] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:40,916] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:41,416] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别7秒前)
+[2026-05-21 13:14:41,416] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:41,417] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:41,417] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:41,417] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:43,221] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:43,221] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:43,221] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:43,222] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:43,841] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:43,841] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:43,842] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:43,842] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:44,343] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别10秒前)
+[2026-05-21 13:14:44,343] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:44,343] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:44,343] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:44,343] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:46,162] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:46,163] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:46,163] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:46,163] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:46,764] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:46,764] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:46,764] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:46,764] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:47,265] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别13秒前)
+[2026-05-21 13:14:47,265] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:47,265] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:47,265] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:47,266] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:49,066] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:49,066] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:49,067] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:49,067] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:49,677] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:49,677] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:49,677] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:49,677] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:50,179] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别16秒前)
+[2026-05-21 13:14:50,179] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:50,179] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:50,179] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:50,179] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:52,026] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:52,027] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:52,027] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:52,027] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:52,649] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:52,649] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:52,649] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:52,649] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:53,150] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别19秒前)
+[2026-05-21 13:14:53,150] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:53,150] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:53,150] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:53,150] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:54,985] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:54,985] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:54,985] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:54,986] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:55,597] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:55,597] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:55,598] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:55,598] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:56,098] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别22秒前)
+[2026-05-21 13:14:56,099] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:56,099] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:56,099] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:56,099] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:14:57,940] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:14:57,940] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:14:57,940] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:14:57,940] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:14:58,527] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:14:58,527] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:14:58,527] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:14:58,527] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:14:59,027] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别25秒前)
+[2026-05-21 13:14:59,027] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:14:59,027] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:14:59,028] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:14:59,028] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:00,859] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:00,859] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:00,859] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:00,859] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:01,481] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:01,481] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:01,481] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:01,481] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:01,981] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别28秒前)
+[2026-05-21 13:15:01,981] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:01,982] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:01,982] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:01,982] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:03,801] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:03,801] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:03,801] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:03,801] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:04,407] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:04,407] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:04,407] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:04,407] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:04,908] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别31秒前)
+[2026-05-21 13:15:04,908] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:04,908] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:04,908] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:04,908] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:06,732] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:06,732] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:06,732] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:06,733] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:07,369] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:07,369] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:07,370] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:07,370] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:07,870] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别34秒前)
+[2026-05-21 13:15:07,870] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:07,870] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:07,870] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:07,870] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:09,659] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:09,659] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:09,660] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:09,660] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:10,277] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:10,277] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:10,277] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:10,277] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:10,778] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别36秒前)
+[2026-05-21 13:15:10,778] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:10,778] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:10,778] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:10,778] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:12,599] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:12,599] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:12,599] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:12,599] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:13,235] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:13,235] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:13,235] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:13,235] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:13,736] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别39秒前)
+[2026-05-21 13:15:13,736] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:13,737] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:13,737] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:13,737] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:15,570] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:15,571] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:15,571] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:15,571] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:16,187] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:16,187] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:16,187] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:16,187] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:16,688] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别42秒前)
+[2026-05-21 13:15:16,688] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:16,688] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:16,688] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:16,688] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:18,512] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:18,512] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:18,512] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:18,513] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:19,136] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:19,136] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:19,136] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:19,136] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:19,637] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别45秒前)
+[2026-05-21 13:15:19,637] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:19,637] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:19,637] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:19,637] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:21,467] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:21,467] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:21,467] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:21,467] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:22,087] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:22,087] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:22,087] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:22,087] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:22,588] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别48秒前)
+[2026-05-21 13:15:22,588] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:22,588] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:22,588] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:22,588] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:24,400] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:24,400] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:24,400] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:24,400] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:25,018] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:25,018] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:25,018] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:25,018] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:25,519] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别51秒前)
+[2026-05-21 13:15:25,519] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:25,519] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:25,519] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:25,519] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:27,352] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:27,352] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:27,352] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:27,353] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:27,988] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:27,988] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:27,988] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:27,988] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:28,489] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别54秒前)
+[2026-05-21 13:15:28,489] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:28,489] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:28,490] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:28,490] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:30,302] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:30,303] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:30,303] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:30,303] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:30,910] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:30,910] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:30,911] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:30,911] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:31,411] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别57秒前)
+[2026-05-21 13:15:31,412] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:31,412] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:31,412] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:31,412] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:33,245] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:33,245] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:33,246] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:33,246] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:33,877] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:33,878] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:33,878] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:33,878] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:34,379] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别60秒前)
+[2026-05-21 13:15:34,379] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:34,379] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:34,379] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:34,379] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:36,192] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:36,193] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:36,193] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:36,193] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:36,822] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:36,822] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:36,822] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:36,822] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:37,322] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别63秒前)
+[2026-05-21 13:15:37,323] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:37,323] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:37,323] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:37,323] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:39,193] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:39,193] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:39,193] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:39,193] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:39,808] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:39,808] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:39,808] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:39,808] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:40,309] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别66秒前)
+[2026-05-21 13:15:40,309] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:40,309] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:40,309] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:40,309] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:42,122] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:42,122] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:42,122] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:42,123] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:42,744] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:42,744] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:42,744] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:42,744] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:43,245] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别69秒前)
+[2026-05-21 13:15:43,245] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:43,246] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:43,246] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:43,246] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:45,069] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:45,069] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:45,070] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:45,070] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:45,687] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:45,687] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:45,688] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:45,688] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:46,188] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别72秒前)
+[2026-05-21 13:15:46,188] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:46,188] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:46,188] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:46,188] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:48,012] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:48,012] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:48,012] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:48,012] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:48,618] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:48,618] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:48,618] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:48,618] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:49,119] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别75秒前)
+[2026-05-21 13:15:49,119] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:49,119] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:49,120] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:49,120] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:50,944] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:50,944] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:50,944] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:50,944] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:51,561] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:51,561] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:51,561] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:51,561] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:52,061] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别78秒前)
+[2026-05-21 13:15:52,062] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:52,062] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:52,062] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:52,062] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:53,885] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:53,885] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:53,885] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:53,885] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:54,444] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:54,444] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:54,444] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:54,445] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:54,945] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别81秒前)
+[2026-05-21 13:15:54,945] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:54,946] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:54,946] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:54,946] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:56,758] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:56,758] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:56,758] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:56,759] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-21 13:15:57,326] [INFO] [check_plan_queue.py:18] [GameBot] 规划队列已启用
+[2026-05-21 13:15:57,326] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-21 13:15:57,326] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-21 13:15:57,327] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-21 13:15:57,827] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 81608 (上次识别83秒前)
+[2026-05-21 13:15:57,828] [INFO] [self_improve.py:23] [GameBot] 缓存等级达标，跳过识别并进入下一状态
+[2026-05-21 13:15:57,828] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-21 13:15:57,828] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-21 13:15:57,828] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-21 13:15:59,640] [INFO] [switch_to_work.py:18] [GameBot] 已切换到工作-科研界面
+[2026-05-21 13:15:59,640] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-21 13:15:59,640] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-21 13:15:59,640] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
