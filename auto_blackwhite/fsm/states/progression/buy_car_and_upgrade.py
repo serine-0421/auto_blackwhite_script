@@ -24,8 +24,8 @@ class BuyCarAndUpgradeState(State):
         time.sleep(0.5)
         for _ in range(20):  # 最大点击
             controller.safe_click(*RESEARCH_PLUS_BUTTON)
-            time.sleep(0.1)
+            time.sleep(0.5)
         controller.press_back()
         time.sleep(0.5)
-        # 返回职位检查状态
-        return "check_position"
+        # 先切换到工作-科研界面，再检查规划队列和后续等级
+        return "switch_to_work"

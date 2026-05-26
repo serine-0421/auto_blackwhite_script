@@ -54,34 +54,42 @@ class Recognizer:
         ]
     
         best_digits = None
-        text = ''
-        try:
-            for config in configs:
+        all_texts = []
+        for config in configs:
+            try:
                 text = pytesseract.image_to_string(proc, config=config, timeout=OCR_TIMEOUT).strip()
-                digits = ''.join(ch for ch in text if ch.isdigit())
-                if digits:
-                    best_digits = digits
-                    break
-    
-            # 放大识别
-            if not best_digits:
-                h, w = proc.shape[:2]
-                if h < 30 or w < 50:  
-                    proc_big = cv2.resize(proc, (w*2, h*2), interpolation=cv2.INTER_CUBIC)
-                    for config in configs:
+            except Exception as e:
+                logger.warning(f"OCR config failed for region {region} config={config}: {e}")
+                text = ""
+            all_texts.append((config, text))
+            digits = ''.join(ch for ch in text if ch.isdigit())
+            if digits:
+                best_digits = digits
+                break
+
+        # 放大识别
+        if not best_digits:
+            h, w = proc.shape[:2]
+            if h < 30 or w < 50:
+                proc_big = cv2.resize(proc, (w*2, h*2), interpolation=cv2.INTER_CUBIC)
+                for config in configs:
+                    try:
                         text = pytesseract.image_to_string(proc_big, config=config, timeout=OCR_TIMEOUT).strip()
-                        digits = ''.join(ch for ch in text if ch.isdigit())
-                        if digits:
-                            best_digits = digits
-                            break
-        except Exception as e:
-            logger.warning(f"OCR exception for region {region}: {e}")
-            return None
-    
+                    except Exception as e:
+                        logger.warning(f"OCR big config failed for region {region} config={config}: {e}")
+                        text = ""
+                    all_texts.append((config + ' (big)', text))
+                    digits = ''.join(ch for ch in text if ch.isdigit())
+                    if digits:
+                        best_digits = digits
+                        break
+
         if best_digits and best_digits.isdigit():
             return int(best_digits)
-        
-        logger.debug(f"OCR failed for region {region}, raw text: {text}")
+
+        for config, text in all_texts:
+            logger.info(f"OCR raw text [{config}] = '{text}'")
+        logger.info(f"OCR failed for region {region}, extracted digits: {''.join(ch for ch in all_texts[-1][1] if ch.isdigit())}")
         self._save_debug_screenshot(region, prefix="ocr_number_failed")
         return None
 

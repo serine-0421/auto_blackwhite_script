@@ -10512,3 +10512,1809 @@ pytesseract.pytesseract.TesseractError: (3221225786, 'ObjectCache(00007ffd455c66
 [2026-05-26 13:39:50,427] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
 [2026-05-26 13:39:50,427] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
 [2026-05-26 13:39:50,427] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 16:41:09,418] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 16:41:09,418] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 16:41:09,418] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 16:41:09,418] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 16:41:09,418] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 16:41:09,418] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 16:41:09,419] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 16:41:09,419] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 16:41:09,419] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 16:41:09,419] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 16:41:09,419] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 16:41:09,919] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 16:41:10,112] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 16:41:10,178] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 16:41:10,601] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:10,601] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:10,601] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:10,601] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:10,602] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:41:10,729] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_164110_722363.png
+[2026-05-26 16:41:10,729] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:41:10,858] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_164110_854051.png
+[2026-05-26 16:41:12,236] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 16:41:12,236] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 16:41:12,236] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 16:41:12,236] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 16:41:13,920] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 16:41:22,265] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:22,265] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:22,265] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:22,265] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:22,265] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:41:22,393] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_164122_388765.png
+[2026-05-26 16:41:22,394] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:41:22,589] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_164122_584623.png
+[2026-05-26 16:41:23,028] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 16:41:23,028] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 16:41:23,029] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 16:41:23,661] [WARNING] [check_plan_queue.py:13] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准
+[2026-05-26 16:41:23,661] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 16:41:23,661] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 16:41:23,661] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 16:41:25,534] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:25,534] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:28,746] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:28,746] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:31,938] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:31,939] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:33,010] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:33,010] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:33,010] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:33,010] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:33,010] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:41:33,118] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_164133_114261.png
+[2026-05-26 16:41:33,119] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:41:33,230] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_164133_225853.png
+[2026-05-26 16:41:35,128] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:35,128] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:38,320] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:38,320] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:41,525] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:41,525] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:43,655] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:43,655] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:43,655] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:43,655] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:41:43,655] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:41:43,764] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_164143_760532.png
+[2026-05-26 16:41:43,765] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:41:43,883] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_164143_879372.png
+[2026-05-26 16:41:44,725] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:44,725] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:47,926] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:47,927] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:41:51,113] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:41:51,113] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:50:36,518] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 16:50:36,519] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 16:50:36,519] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 16:50:36,519] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 16:50:36,519] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 16:50:36,519] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 16:50:36,519] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 16:50:36,519] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 16:50:36,519] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 16:50:36,520] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 16:50:36,520] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 16:50:37,021] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 16:50:37,225] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 16:50:37,281] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 16:50:37,673] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:37,673] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:37,673] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:37,673] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:37,674] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:50:37,741] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165037_737374.png
+[2026-05-26 16:50:37,742] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:50:37,828] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_165037_823757.png
+[2026-05-26 16:50:39,308] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 16:50:39,308] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 16:50:39,308] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 16:50:39,308] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 16:50:40,969] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 16:50:49,280] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:49,281] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:49,281] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:49,281] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:49,281] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:50:49,351] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165049_345957.png
+[2026-05-26 16:50:49,352] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:50:49,423] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_165049_417751.png
+[2026-05-26 16:50:50,104] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 16:50:50,104] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 16:50:50,104] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 16:50:50,682] [WARNING] [check_plan_queue.py:13] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准
+[2026-05-26 16:50:50,682] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 16:50:50,682] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 16:50:50,682] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 16:50:52,708] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:52,708] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:52,708] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:52,708] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:52,708] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 16:50:52,767] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165052_763320.png
+[2026-05-26 16:50:52,768] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 16:50:56,158] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:56,158] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:56,158] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:56,158] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:56,158] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 16:50:56,273] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165056_267422.png
+[2026-05-26 16:50:56,274] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 16:50:59,694] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,694] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,694] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,694] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,694] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 16:50:59,810] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165059_805754.png
+[2026-05-26 16:50:59,811] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 16:50:59,858] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,858] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,858] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,858] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:50:59,858] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:50:59,970] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165059_965568.png
+[2026-05-26 16:50:59,970] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:51:00,092] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_165100_087827.png
+[2026-05-26 16:51:03,025] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:03,025] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:06,182] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:06,182] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:09,364] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:09,364] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:10,510] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:10,510] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:10,510] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:10,510] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:10,510] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:51:10,623] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165110_619408.png
+[2026-05-26 16:51:10,624] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:51:10,739] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_165110_735470.png
+[2026-05-26 16:51:12,562] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:12,562] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:15,726] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:15,726] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:18,918] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:18,918] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 16:51:21,145] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:21,146] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:21,146] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:21,146] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 16:51:21,146] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 16:51:21,260] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_165121_255620.png
+[2026-05-26 16:51:21,260] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 16:51:21,368] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_165121_362544.png
+[2026-05-26 16:51:22,077] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 16:51:22,077] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 17:01:17,525] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 17:01:17,526] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 17:01:17,526] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 17:01:17,526] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 17:01:17,526] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:01:17,526] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 17:01:17,526] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 17:01:17,527] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 17:01:17,527] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 17:01:17,527] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 17:01:17,527] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 17:01:18,028] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:01:18,218] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:01:18,298] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:01:18,676] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:18,676] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:18,676] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:18,676] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:18,676] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:01:18,803] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_170118_798651.png
+[2026-05-26 17:01:18,804] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:01:18,910] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_170118_906064.png
+[2026-05-26 17:01:20,315] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 17:01:20,315] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 17:01:20,315] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 17:01:20,315] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 17:01:21,974] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 17:01:30,217] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:30,217] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:30,217] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:30,218] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:30,218] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:01:30,340] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_170130_336187.png
+[2026-05-26 17:01:30,341] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:01:30,453] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_170130_449275.png
+[2026-05-26 17:01:31,084] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 17:01:31,086] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 17:01:31,086] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 17:01:31,718] [WARNING] [check_plan_queue.py:17] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，重试 1/3
+[2026-05-26 17:01:31,851] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_170131_846605.png
+[2026-05-26 17:01:33,296] [WARNING] [check_plan_queue.py:17] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，重试 2/3
+[2026-05-26 17:01:33,401] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_2_20260526_170133_397283.png
+[2026-05-26 17:01:34,840] [WARNING] [check_plan_queue.py:17] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，重试 3/3
+[2026-05-26 17:01:34,963] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_3_20260526_170134_959053.png
+[2026-05-26 17:01:36,272] [WARNING] [check_plan_queue.py:29] [GameBot] 规划队列检测重试3次后仍未成功，继续进入下一流程
+[2026-05-26 17:01:36,272] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 17:01:36,272] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 17:01:36,272] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 17:01:38,154] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 17:01:38,154] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 17:01:40,868] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:40,868] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:40,868] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:40,868] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:01:40,868] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:01:40,976] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_170140_972502.png
+[2026-05-26 17:01:40,977] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:01:41,102] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_170141_098494.png
+[2026-05-26 17:01:41,368] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 125
+[2026-05-26 17:01:41,368] [INFO] [self_improve.py:51] [GameBot] 等级不足125<150，等待3秒...
+[2026-05-26 17:15:45,112] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 17:15:45,112] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 17:15:45,112] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 17:15:45,112] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 17:15:45,112] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:15:45,112] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 17:15:45,112] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 17:15:45,113] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 17:15:45,113] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 17:15:45,113] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 17:15:45,113] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 17:15:45,613] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:15:45,841] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:15:45,884] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:15:46,282] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:46,282] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:46,282] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:46,282] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:46,282] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:15:46,393] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171546_388724.png
+[2026-05-26 17:15:46,393] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:15:46,514] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171546_509423.png
+[2026-05-26 17:15:47,933] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 17:15:47,933] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 17:15:47,933] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 17:15:47,934] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 17:15:49,596] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 17:15:51,035] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 17:15:57,873] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:57,873] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:57,873] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:57,873] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:15:57,873] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:15:57,940] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171557_936408.png
+[2026-05-26 17:15:57,941] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:15:58,012] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171558_008591.png
+[2026-05-26 17:15:58,697] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 17:15:58,697] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 17:15:58,697] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 17:15:59,318] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 17:15:59,437] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_171559_433265.png
+[2026-05-26 17:16:00,835] [WARNING] [check_plan_queue.py:34] [GameBot] 规划队列修复失败，尝试点击GUIHUADUILIE后重新检测
+[2026-05-26 17:16:00,966] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_2_20260526_171600_962122.png
+[2026-05-26 17:16:01,762] [INFO] [check_plan_queue.py:45] [GameBot] 规划队列修复成功（GUIHUADUILIE），进入下一流程
+[2026-05-26 17:16:01,762] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 17:16:01,762] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 17:16:01,762] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 17:16:03,830] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:03,830] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:03,830] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:03,830] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:03,830] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:16:03,950] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171603_946542.png
+[2026-05-26 17:16:03,951] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:16:07,364] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:07,364] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:07,364] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:07,364] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:07,364] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:16:07,476] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171607_471583.png
+[2026-05-26 17:16:07,476] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:16:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:08,423] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:16:08,549] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171608_544920.png
+[2026-05-26 17:16:08,550] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:16:08,622] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171608_618325.png
+[2026-05-26 17:16:10,902] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:10,902] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:10,903] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:10,903] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:10,903] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:16:11,010] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171611_005798.png
+[2026-05-26 17:16:11,011] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:16:14,428] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:14,428] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:14,428] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:14,428] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:14,428] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:16:14,536] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171614_532285.png
+[2026-05-26 17:16:14,537] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:16:17,941] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:17,941] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:17,941] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:17,941] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:17,941] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:16:18,018] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171618_013958.png
+[2026-05-26 17:16:18,019] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:16:19,038] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:19,038] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:19,038] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:19,039] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:16:19,039] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:16:19,147] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171619_143137.png
+[2026-05-26 17:16:19,148] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:16:19,260] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171619_254969.png
+[2026-05-26 17:18:34,820] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 17:18:34,820] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 17:18:34,820] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 17:18:34,820] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 17:18:34,820] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:18:34,820] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 17:18:34,820] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 17:18:34,820] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 17:18:34,820] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 17:18:34,821] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 17:18:34,821] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 17:18:35,321] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:18:35,495] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:18:35,571] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:18:35,929] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:35,929] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:35,929] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:35,929] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:35,929] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:18:35,994] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171835_990238.png
+[2026-05-26 17:18:35,995] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:18:36,081] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171836_076811.png
+[2026-05-26 17:18:37,556] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 17:18:37,556] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 17:18:37,556] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 17:18:37,556] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 17:18:39,227] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 17:18:40,686] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 17:18:47,558] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:47,559] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:47,559] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:47,559] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:47,559] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:18:47,625] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171847_620988.png
+[2026-05-26 17:18:47,626] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:18:47,695] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171847_691308.png
+[2026-05-26 17:18:48,327] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 17:18:48,327] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 17:18:48,327] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 17:18:48,961] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 17:18:48,961] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 17:18:48,961] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 17:18:48,961] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 17:18:51,014] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:51,014] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:51,015] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:51,015] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:51,015] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:18:51,127] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171851_122950.png
+[2026-05-26 17:18:51,128] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:18:54,403] [INFO] [self_improve.py:43] [GameBot] 活力研究等级: 8
+[2026-05-26 17:18:54,404] [INFO] [self_improve.py:51] [GameBot] 等级不足8<150，等待3秒...
+[2026-05-26 17:18:57,826] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:57,826] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:57,826] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:57,826] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:57,826] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:18:57,936] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171857_932059.png
+[2026-05-26 17:18:57,937] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:18:58,124] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:58,124] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:58,124] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:58,124] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:18:58,125] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:18:58,253] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171858_248300.png
+[2026-05-26 17:18:58,254] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:18:58,361] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171858_356983.png
+[2026-05-26 17:19:01,351] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:01,351] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:01,352] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:01,352] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:01,352] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:01,473] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171901_468285.png
+[2026-05-26 17:19:01,474] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:04,910] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:04,910] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:04,910] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:04,910] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:04,910] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:05,012] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171905_008297.png
+[2026-05-26 17:19:05,013] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,423] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,423] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:08,556] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171908_552172.png
+[2026-05-26 17:19:08,557] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:08,766] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,766] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,766] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,766] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:08,766] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:19:08,882] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171908_878714.png
+[2026-05-26 17:19:08,883] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:19:08,986] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171908_982483.png
+[2026-05-26 17:19:11,991] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:11,991] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:11,991] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:11,991] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:11,991] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:12,119] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171912_115265.png
+[2026-05-26 17:19:12,120] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:15,550] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:15,550] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:15,551] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:15,551] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:15,551] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:15,669] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171915_664944.png
+[2026-05-26 17:19:15,670] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:19,091] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,091] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,091] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,091] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,091] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:19,207] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171919_202691.png
+[2026-05-26 17:19:19,208] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:19,413] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,413] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,413] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,413] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:19,413] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:19:19,529] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171919_525325.png
+[2026-05-26 17:19:19,530] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:19:19,646] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_171919_641883.png
+[2026-05-26 17:19:22,586] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:22,586] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:22,586] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:22,586] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:22,587] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:22,709] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171922_704985.png
+[2026-05-26 17:19:22,710] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:19:26,140] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:26,140] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:26,140] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:26,140] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:19:26,140] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:19:26,266] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_171926_262663.png
+[2026-05-26 17:19:26,267] [WARNING] [self_improve.py:35] [GameBot] 识别活力研究等级失败，重试
+[2026-05-26 17:37:33,206] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 17:37:33,206] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 17:37:33,207] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 17:37:33,207] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 17:37:33,207] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:37:33,207] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 17:37:33,207] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 17:37:33,207] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 17:37:33,207] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 17:37:33,207] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 17:37:33,207] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 17:37:33,708] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 17:37:33,903] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:37:33,961] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 17:37:34,430] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:34,430] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:34,430] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:34,430] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:34,430] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:37:34,513] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173734_507372.png
+[2026-05-26 17:37:34,513] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:37:34,588] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173734_584315.png
+[2026-05-26 17:37:36,026] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 17:37:36,026] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 17:37:36,026] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 17:37:36,026] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 17:37:37,690] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 17:37:39,111] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 17:37:45,970] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:45,970] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:45,970] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:45,970] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:45,971] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:37:46,036] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173746_030942.png
+[2026-05-26 17:37:46,037] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:37:46,090] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173746_086559.png
+[2026-05-26 17:37:46,760] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 17:37:46,760] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 17:37:46,760] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 17:37:47,349] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 17:37:47,349] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 17:37:47,349] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 17:37:47,350] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 17:37:49,420] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:49,420] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:49,420] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:49,420] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:49,420] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:37:49,536] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173749_532011.png
+[2026-05-26 17:37:49,537] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 1/10
+[2026-05-26 17:37:52,955] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:52,955] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:52,955] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:52,955] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:52,955] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:37:53,063] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173753_059022.png
+[2026-05-26 17:37:53,064] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 2/10
+[2026-05-26 17:37:56,490] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,490] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,490] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,490] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,490] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:37:56,590] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,590] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,590] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,591] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:37:56,591] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:37:56,613] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173756_608584.png
+[2026-05-26 17:37:56,614] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 3/10
+[2026-05-26 17:37:56,713] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173756_709001.png
+[2026-05-26 17:37:56,713] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:37:56,829] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173756_825383.png
+[2026-05-26 17:38:00,035] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:00,035] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:00,035] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:00,035] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:00,036] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:00,153] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173800_149206.png
+[2026-05-26 17:38:00,154] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 4/10
+[2026-05-26 17:38:03,573] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:03,573] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:03,573] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:03,573] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:03,573] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:03,704] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173803_700319.png
+[2026-05-26 17:38:03,705] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 5/10
+[2026-05-26 17:38:07,133] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,133] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,133] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,134] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,134] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:07,239] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173807_235015.png
+[2026-05-26 17:38:07,240] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 6/10
+[2026-05-26 17:38:07,261] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,261] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,261] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,261] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:07,261] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:38:07,369] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173807_365218.png
+[2026-05-26 17:38:07,370] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:38:07,476] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173807_472017.png
+[2026-05-26 17:38:10,698] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:10,698] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:10,698] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:10,698] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:10,698] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:10,810] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173810_805450.png
+[2026-05-26 17:38:10,810] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 7/10
+[2026-05-26 17:38:14,263] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:14,263] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:14,263] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:14,263] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:14,263] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:14,378] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173814_371531.png
+[2026-05-26 17:38:14,378] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 8/10
+[2026-05-26 17:38:17,833] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,833] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,833] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,833] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,833] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:17,899] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,899] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,899] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,899] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:17,899] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:38:17,952] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173817_948661.png
+[2026-05-26 17:38:17,953] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 9/10
+[2026-05-26 17:38:18,041] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173818_036216.png
+[2026-05-26 17:38:18,042] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:38:18,163] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173818_159015.png
+[2026-05-26 17:38:21,386] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:21,386] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:21,386] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:21,386] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:21,386] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:21,458] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173821_453720.png
+[2026-05-26 17:38:21,459] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 10/10
+[2026-05-26 17:38:24,460] [WARNING] [self_improve.py:57] [GameBot] 活力研究等级连续10次识别失败，自动进入下一流程
+[2026-05-26 17:38:24,591] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\vitality_level_fail_20260526_173824_586384.png
+[2026-05-26 17:38:26,344] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 17:38:26,344] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 17:38:26,344] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 17:38:28,148] [INFO] [switch_to_work.py:18] [GameBot] 识别活力研究等级失败，点击研究生按钮继续后续流程
+[2026-05-26 17:38:28,693] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:28,693] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:28,693] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:28,693] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:28,693] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 17:38:28,772] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173828_768070.png
+[2026-05-26 17:38:28,773] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 17:38:28,804] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 17:38:28,804] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 17:38:28,804] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 17:38:28,804] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 17:38:28,841] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_173828_836796.png
+[2026-05-26 17:38:29,387] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 17:38:29,387] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 17:38:29,387] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 17:38:29,387] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 17:38:31,478] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:31,478] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:31,478] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:31,478] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:31,478] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:31,597] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173831_593101.png
+[2026-05-26 17:38:31,598] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 1/10
+[2026-05-26 17:38:35,015] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:35,015] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:35,016] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:35,016] [INFO] [recognizer.py:87] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 17:38:35,016] [INFO] [recognizer.py:88] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 17:38:35,129] [INFO] [recognizer.py:157] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_173835_124880.png
+[2026-05-26 17:38:35,129] [WARNING] [self_improve.py:38] [GameBot] 识别活力研究等级失败，重试 2/10
+[2026-05-26 18:16:49,357] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 18:16:49,357] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 18:16:49,358] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 18:16:49,358] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 18:16:49,358] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:16:49,358] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 18:16:49,358] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 18:16:49,358] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 18:16:49,358] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 18:16:49,358] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 18:16:49,358] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 18:16:49,859] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:16:50,069] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:16:50,132] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:16:50,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:16:50,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:16:50,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:16:50,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:16:50,533] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:16:50,590] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181650_586377.png
+[2026-05-26 18:16:50,591] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:16:50,648] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_181650_643012.png
+[2026-05-26 18:16:52,159] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 18:16:52,159] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 18:16:52,159] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 18:16:52,159] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 18:16:53,822] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 18:16:55,255] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 18:17:02,012] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:02,012] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:02,012] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:02,012] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:02,012] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:17:02,077] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181702_073234.png
+[2026-05-26 18:17:02,078] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:17:02,158] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_181702_154235.png
+[2026-05-26 18:17:02,835] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 18:17:02,836] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 18:17:02,836] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:17:03,423] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:17:03,424] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:17:03,424] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:17:03,424] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:17:05,537] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:05,538] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:05,538] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:05,538] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:05,538] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:05,652] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181705_647836.png
+[2026-05-26 18:17:05,652] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 1/10
+[2026-05-26 18:17:09,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:09,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:09,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:09,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:09,065] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:09,158] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181709_154321.png
+[2026-05-26 18:17:09,159] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 2/10
+[2026-05-26 18:17:12,549] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,549] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,549] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,549] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,550] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:12,630] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,631] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,631] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,631] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:12,631] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:17:12,659] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181712_654375.png
+[2026-05-26 18:17:12,660] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 3/10
+[2026-05-26 18:17:12,756] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181712_751488.png
+[2026-05-26 18:17:12,756] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:17:12,866] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_181712_862041.png
+[2026-05-26 18:17:16,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:16,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:16,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:16,065] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:16,065] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:16,176] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181716_171776.png
+[2026-05-26 18:17:16,177] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 4/10
+[2026-05-26 18:17:19,607] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:19,607] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:19,607] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:19,607] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:19,607] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:19,730] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181719_725657.png
+[2026-05-26 18:17:19,730] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 5/10
+[2026-05-26 18:17:23,169] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,169] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,169] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,170] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,170] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:23,286] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,286] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,286] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,286] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:23,286] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:17:23,296] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181723_291966.png
+[2026-05-26 18:17:23,297] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 6/10
+[2026-05-26 18:17:23,391] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181723_387557.png
+[2026-05-26 18:17:23,392] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:17:23,501] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_181723_497878.png
+[2026-05-26 18:17:26,730] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:26,730] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:26,730] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:26,730] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:17:26,730] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:17:26,828] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_181726_823942.png
+[2026-05-26 18:17:26,829] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 7/10
+[2026-05-26 18:21:33,614] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 18:21:33,614] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 18:21:33,614] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 18:21:33,614] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 18:21:33,614] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:21:33,614] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 18:21:33,614] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 18:21:33,615] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 18:21:33,615] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 18:21:33,615] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 18:21:33,615] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 18:21:34,115] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:21:34,296] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:21:34,349] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:21:34,763] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:34,763] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:34,763] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:34,763] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:34,763] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:21:34,859] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182134_855100.png
+[2026-05-26 18:21:34,860] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:21:34,966] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182134_961648.png
+[2026-05-26 18:21:36,415] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 18:21:36,415] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 18:21:36,415] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 18:21:36,415] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 18:21:38,073] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 18:21:39,502] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 18:21:46,323] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:46,323] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:46,323] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:46,323] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:46,324] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:21:46,392] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182146_388323.png
+[2026-05-26 18:21:46,393] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:21:46,456] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182146_452147.png
+[2026-05-26 18:21:47,139] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 18:21:47,139] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 18:21:47,139] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:21:47,725] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:21:47,859] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_182147_854857.png
+[2026-05-26 18:21:49,278] [WARNING] [check_plan_queue.py:34] [GameBot] 规划队列修复失败，尝试点击GUIHUADUILIE后重新检测
+[2026-05-26 18:21:49,396] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_2_20260526_182149_391417.png
+[2026-05-26 18:21:50,162] [INFO] [check_plan_queue.py:45] [GameBot] 规划队列修复成功（GUIHUADUILIE），进入下一流程
+[2026-05-26 18:21:50,162] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:21:50,162] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:21:50,162] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:21:52,254] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:52,254] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:52,254] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:52,254] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:52,254] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:21:52,361] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182152_357754.png
+[2026-05-26 18:21:52,362] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 1/10
+[2026-05-26 18:21:52,363] [INFO] [self_improve.py:44] [GameBot] 首次识别失败，依次点击 LIFE_BUTTON、YANJIU_BUTTON、SELF_IMPROVE_BUTTON 重新进入界面
+[2026-05-26 18:21:55,289] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:55,290] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:55,290] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:55,290] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:55,290] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:21:55,402] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182155_397589.png
+[2026-05-26 18:21:55,402] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 2/10
+[2026-05-26 18:21:56,876] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:56,876] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:56,876] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:56,877] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:56,877] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:21:56,986] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182156_981746.png
+[2026-05-26 18:21:56,987] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:21:57,119] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182157_114463.png
+[2026-05-26 18:21:58,811] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:58,811] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:58,811] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:58,812] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:21:58,812] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:21:58,935] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182158_930906.png
+[2026-05-26 18:21:58,936] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 3/10
+[2026-05-26 18:22:02,346] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:02,346] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:02,346] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:02,346] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:02,346] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:02,458] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182202_454357.png
+[2026-05-26 18:22:02,459] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 4/10
+[2026-05-26 18:22:05,864] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:05,864] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:05,864] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:05,864] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:05,864] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:05,979] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182205_974639.png
+[2026-05-26 18:22:05,980] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 5/10
+[2026-05-26 18:22:07,527] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:07,527] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:07,528] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:07,528] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:07,528] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:22:07,643] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182207_638078.png
+[2026-05-26 18:22:07,643] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:22:07,755] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182207_750809.png
+[2026-05-26 18:22:09,364] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:09,364] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:09,364] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:09,365] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:09,365] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:09,478] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182209_474593.png
+[2026-05-26 18:22:09,479] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 6/10
+[2026-05-26 18:22:12,885] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:12,885] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:12,885] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:12,885] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:12,885] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:12,995] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182212_990948.png
+[2026-05-26 18:22:12,996] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 7/10
+[2026-05-26 18:22:16,417] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:16,417] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:16,417] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:16,417] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:16,417] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:16,518] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182216_514077.png
+[2026-05-26 18:22:16,519] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 8/10
+[2026-05-26 18:22:18,163] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:18,163] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:18,163] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:18,163] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:18,163] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:22:18,272] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182218_267495.png
+[2026-05-26 18:22:18,272] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:22:18,388] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182218_383975.png
+[2026-05-26 18:22:19,924] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:19,924] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:19,924] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:19,924] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:19,924] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:20,042] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182220_038116.png
+[2026-05-26 18:22:20,043] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 9/10
+[2026-05-26 18:22:23,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:23,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:23,427] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:23,427] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:23,427] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:22:23,532] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182223_528883.png
+[2026-05-26 18:22:23,533] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 10/10
+[2026-05-26 18:22:26,534] [WARNING] [self_improve.py:70] [GameBot] 活力研究等级连续10次识别失败，自动进入下一流程
+[2026-05-26 18:22:26,651] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\vitality_level_fail_20260526_182226_646706.png
+[2026-05-26 18:22:28,414] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:28,414] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:28,414] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:28,791] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:28,791] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:28,791] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:28,791] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:28,792] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:22:28,915] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182228_909964.png
+[2026-05-26 18:22:28,916] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:22:29,026] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182229_022150.png
+[2026-05-26 18:22:30,311] [INFO] [switch_to_work.py:18] [GameBot] 识别活力研究等级失败，点击研究生按钮继续后续流程
+[2026-05-26 18:22:30,973] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:30,973] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:30,973] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:30,973] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:22:31,557] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:22:31,558] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:22:31,558] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:22:31,558] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:22:32,059] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:22:32,059] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:32,059] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:32,059] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:33,884] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:33,884] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:33,885] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:33,885] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:22:34,488] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:22:34,488] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:22:34,488] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:22:34,488] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:22:34,989] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:22:34,989] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:34,989] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:34,990] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:36,806] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:36,807] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:36,807] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:36,807] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:22:37,418] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:22:37,418] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:22:37,418] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:22:37,419] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:22:37,919] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:22:37,919] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:37,920] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:37,920] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:39,419] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:39,419] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:39,419] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:39,419] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:22:39,419] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:22:39,540] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182239_535929.png
+[2026-05-26 18:22:39,541] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，跳过执行
+[2026-05-26 18:22:39,667] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182239_662870.png
+[2026-05-26 18:22:39,754] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:39,754] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:39,754] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:39,755] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:22:40,372] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:22:40,373] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:22:40,373] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:22:40,373] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:22:40,873] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:22:40,873] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:40,874] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:40,874] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:42,712] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:42,713] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:42,713] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:42,713] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:22:43,329] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:22:43,330] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:22:43,330] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:22:43,330] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:22:43,830] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:22:43,831] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:22:43,831] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:22:43,831] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:22:45,643] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:22:45,644] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:22:45,644] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:22:45,644] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:26:54,174] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 18:26:54,174] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 18:26:54,175] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 18:26:54,175] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 18:26:54,175] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:26:54,175] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 18:26:54,175] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 18:26:54,175] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 18:26:54,175] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 18:26:54,175] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 18:26:54,175] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 18:26:54,675] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:26:54,844] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:26:54,897] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:26:55,265] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:26:55,265] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:26:55,265] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:26:55,265] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:26:55,265] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:26:55,345] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182655_340143.png
+[2026-05-26 18:26:55,346] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:26:55,424] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182655_419904.png
+[2026-05-26 18:26:56,897] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 18:26:56,897] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 18:26:56,897] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 18:26:56,897] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 18:26:58,546] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 18:27:02,599] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 18:27:10,239] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 18:27:10,240] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 18:27:10,240] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:10,860] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:27:10,860] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:10,860] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:10,860] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:12,640] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,640] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,640] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,641] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,641] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:27:12,755] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182712_750845.png
+[2026-05-26 18:27:12,756] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:27:12,880] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182712_875694.png
+[2026-05-26 18:27:12,946] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,946] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,946] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,947] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:12,947] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:27:13,139] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182713_135268.png
+[2026-05-26 18:27:13,140] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 1/5
+[2026-05-26 18:27:13,140] [INFO] [self_improve.py:44] [GameBot] 首次识别失败，依次点击 LIFE_BUTTON、YANJIU_BUTTON、SELF_IMPROVE_BUTTON 重新进入界面
+[2026-05-26 18:27:16,620] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:16,620] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:16,620] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:16,620] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:16,620] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:27:17,904] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182717_900923.png
+[2026-05-26 18:27:17,905] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 2/5
+[2026-05-26 18:27:21,271] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:21,272] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:21,272] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:21,272] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:21,272] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:27:21,336] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182721_333014.png
+[2026-05-26 18:27:21,337] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 3/5
+[2026-05-26 18:27:24,574] [INFO] [self_improve.py:59] [GameBot] 活力研究等级: 6
+[2026-05-26 18:27:24,574] [INFO] [self_improve.py:67] [GameBot] 等级不足6<150，等待3秒...
+[2026-05-26 18:27:27,948] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:27,948] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:27,948] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:27,948] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:27,948] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:27:28,085] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182728_081324.png
+[2026-05-26 18:27:28,086] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 5/5
+[2026-05-26 18:27:30,104] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:30,104] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:30,104] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:30,104] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:30,104] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:27:30,211] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182730_207569.png
+[2026-05-26 18:27:30,212] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:27:30,322] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182730_318606.png
+[2026-05-26 18:27:31,087] [WARNING] [self_improve.py:70] [GameBot] 活力研究等级连续5次识别失败，自动进入下一流程
+[2026-05-26 18:27:31,190] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\vitality_level_fail_20260526_182731_187022.png
+[2026-05-26 18:27:32,953] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:32,953] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:32,953] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:36,805] [INFO] [switch_to_work.py:18] [GameBot] 识别活力研究等级失败，点击研究生按钮继续后续流程
+[2026-05-26 18:27:38,370] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:38,370] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:38,370] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:38,370] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:38,932] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:27:39,002] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_182738_998293.png
+[2026-05-26 18:27:40,473] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:27:40,473] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:40,473] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:40,473] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:40,974] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别16秒前)
+[2026-05-26 18:27:40,974] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:40,974] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:40,974] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:40,974] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:40,974] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:42,818] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:42,818] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:42,818] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:42,818] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:43,433] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:27:43,433] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:43,433] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:43,433] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:43,934] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别19秒前)
+[2026-05-26 18:27:43,934] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:43,934] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:43,934] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:43,934] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:43,934] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:45,753] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:45,753] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:45,753] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:45,753] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:46,351] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:27:46,351] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:46,351] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:46,351] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:46,851] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别22秒前)
+[2026-05-26 18:27:46,852] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:46,852] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:46,852] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:46,852] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:46,852] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:48,562] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:48,562] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:48,562] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:48,562] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:27:48,562] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:27:48,673] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:48,673] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:48,674] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:48,674] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:48,684] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182748_678397.png
+[2026-05-26 18:27:48,685] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:27:48,810] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182748_804278.png
+[2026-05-26 18:27:49,244] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:27:49,311] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_182749_307148.png
+[2026-05-26 18:27:50,866] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:27:50,866] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:50,866] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:50,866] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:51,367] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别26秒前)
+[2026-05-26 18:27:51,367] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:51,367] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:51,367] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:51,367] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:51,367] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:54,353] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:54,353] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:54,353] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:54,353] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:55,382] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:27:55,382] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:55,382] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:55,382] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:55,883] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别31秒前)
+[2026-05-26 18:27:55,883] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:55,883] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:55,883] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:55,884] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:55,884] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:27:57,720] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:27:57,721] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:27:57,721] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:27:57,721] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:27:58,338] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:27:58,338] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:27:58,338] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:27:58,338] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:27:58,839] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别34秒前)
+[2026-05-26 18:27:58,839] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:27:58,839] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:27:58,839] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:27:58,839] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:27:58,839] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:00,663] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:00,663] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:00,663] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:00,663] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:01,275] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:01,275] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:01,275] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:01,275] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:01,776] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别37秒前)
+[2026-05-26 18:28:01,776] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:01,776] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:01,777] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:01,777] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:01,777] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:03,612] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:03,612] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:03,612] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:03,613] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:04,242] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:04,242] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:04,242] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:04,242] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:04,742] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别40秒前)
+[2026-05-26 18:28:04,742] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:04,742] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:04,742] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:04,742] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:04,743] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:06,010] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:06,010] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:06,010] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:06,010] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:06,010] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:28:06,148] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182806_141934.png
+[2026-05-26 18:28:06,149] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:28:06,274] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182806_270518.png
+[2026-05-26 18:28:06,551] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:06,551] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:06,551] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:06,551] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:07,150] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:28:07,227] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_182807_222847.png
+[2026-05-26 18:28:09,658] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:28:09,658] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:09,658] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:09,658] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:10,159] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别45秒前)
+[2026-05-26 18:28:10,159] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:10,159] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:10,159] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:10,159] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:10,159] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:13,320] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:13,320] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:13,320] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:13,320] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:13,942] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:13,942] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:13,942] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:13,942] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:14,443] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别49秒前)
+[2026-05-26 18:28:14,443] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:14,443] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:14,443] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:14,443] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:14,443] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:16,279] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:16,279] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:16,279] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:16,279] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:16,886] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:16,886] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:16,886] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:16,886] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:17,386] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别52秒前)
+[2026-05-26 18:28:17,386] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:17,387] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:17,387] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:17,387] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:17,387] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:19,221] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:19,221] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:19,221] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:19,221] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:19,831] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:19,831] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:19,832] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:19,832] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:20,332] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别55秒前)
+[2026-05-26 18:28:20,332] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:20,333] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:20,333] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:20,333] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:20,333] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:22,177] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:22,177] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:22,177] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:22,177] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:22,795] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:22,796] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:22,796] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:22,796] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:23,297] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别58秒前)
+[2026-05-26 18:28:23,297] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:23,297] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:23,297] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:23,297] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:23,298] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:23,401] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:23,401] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:23,401] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:23,401] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:28:23,401] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:28:23,519] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_182823_514276.png
+[2026-05-26 18:28:23,520] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:28:23,622] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_182823_617488.png
+[2026-05-26 18:28:25,119] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:25,119] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:25,119] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:25,120] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:25,736] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:25,736] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:25,737] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:25,737] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:26,238] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别61秒前)
+[2026-05-26 18:28:26,238] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:26,238] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:26,238] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:26,238] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:26,238] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:29,166] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:29,166] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:29,166] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:29,166] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:30,156] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:28:30,234] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_182830_230363.png
+[2026-05-26 18:28:31,675] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:28:31,676] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:31,676] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:31,676] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:32,177] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别67秒前)
+[2026-05-26 18:28:32,177] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:32,177] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:32,177] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:32,177] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:32,177] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:33,976] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:33,976] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:33,977] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:33,977] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:34,602] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:34,602] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:34,602] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:34,602] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:35,102] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别70秒前)
+[2026-05-26 18:28:35,103] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:35,103] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:35,103] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:35,103] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:35,103] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:28:36,938] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:28:36,938] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:28:36,938] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:28:36,938] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:28:37,562] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:28:37,562] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:28:37,562] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:28:37,563] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:28:38,063] [INFO] [self_improve.py:21] [GameBot] 使用缓存的活力研究等级: 6 (上次识别73秒前)
+[2026-05-26 18:28:38,063] [INFO] [self_improve.py:26] [GameBot] 缓存等级未达标，继续进入自我提升界面进行分配
+[2026-05-26 18:28:38,063] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:28:38,063] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:28:38,063] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:28:38,063] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:32:56,652] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 18:32:56,652] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 18:32:56,652] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 18:32:56,652] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 18:32:56,652] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:32:56,652] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 18:32:56,652] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 18:32:56,652] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 18:32:56,653] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 18:32:56,653] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 18:32:56,653] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 18:32:57,154] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:32:57,339] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:32:57,430] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:32:57,798] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:32:57,799] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:32:57,799] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:32:57,799] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:32:57,799] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:32:58,221] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183258_216499.png
+[2026-05-26 18:32:58,222] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:32:58,331] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_183258_327292.png
+[2026-05-26 18:33:01,395] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 18:33:01,395] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 18:33:01,395] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 18:33:01,396] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 18:33:03,562] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 18:33:11,258] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 18:33:21,567] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:21,567] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:21,567] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:21,567] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:21,567] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:33:21,649] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183321_645104.png
+[2026-05-26 18:33:21,650] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:33:21,721] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_183321_716106.png
+[2026-05-26 18:33:41,713] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 18:33:41,713] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 18:33:41,713] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:33:42,278] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:33:42,366] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_183342_361646.png
+[2026-05-26 18:33:43,617] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:43,618] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:43,618] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:43,618] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:43,618] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:33:44,266] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183344_261862.png
+[2026-05-26 18:33:44,266] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:33:44,384] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_183344_379697.png
+[2026-05-26 18:33:45,103] [WARNING] [check_plan_queue.py:34] [GameBot] 规划队列修复失败，尝试点击GUIHUADUILIE后重新检测
+[2026-05-26 18:33:45,175] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_2_20260526_183345_170741.png
+[2026-05-26 18:33:46,536] [WARNING] [check_plan_queue.py:48] [GameBot] 规划队列修复仍然失败，继续进入下一流程
+[2026-05-26 18:33:46,611] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_3_20260526_183346_606294.png
+[2026-05-26 18:33:46,612] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:33:46,612] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:33:46,612] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:33:49,644] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:49,644] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:49,644] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:49,644] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:49,644] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:33:51,033] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183351_029600.png
+[2026-05-26 18:33:51,034] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 1/5
+[2026-05-26 18:33:51,034] [INFO] [self_improve.py:44] [GameBot] 首次识别失败，依次点击 LIFE_BUTTON、YANJIU_BUTTON、SELF_IMPROVE_BUTTON 重新进入界面
+[2026-05-26 18:33:57,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:57,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:57,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:57,426] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:33:57,426] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:33:57,506] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183357_502420.png
+[2026-05-26 18:33:57,507] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 2/5
+[2026-05-26 18:34:00,883] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:00,883] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:00,883] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:00,883] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:00,883] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:34:00,953] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183400_949918.png
+[2026-05-26 18:34:00,954] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 3/5
+[2026-05-26 18:34:04,340] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:04,341] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:04,341] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:04,341] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:04,341] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:34:04,549] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183404_542815.png
+[2026-05-26 18:34:04,550] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 4/5
+[2026-05-26 18:34:06,274] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:06,274] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:06,274] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:06,274] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:06,274] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:34:06,341] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183406_336514.png
+[2026-05-26 18:34:06,341] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:34:06,407] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_183406_402936.png
+[2026-05-26 18:34:07,928] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:07,928] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:07,928] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:07,928] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:34:07,928] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:34:08,300] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_183408_296288.png
+[2026-05-26 18:34:08,301] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 5/5
+[2026-05-26 18:40:06,625] [INFO] [main.py:26] [GameBot] 脚本启动
+[2026-05-26 18:40:06,625] [INFO] [main.py:32] [GameBot] 控制器与识别器初始化完成
+[2026-05-26 18:40:06,625] [INFO] [base_task.py:26] [GameBot] 启动任务: TishenTask
+[2026-05-26 18:40:06,625] [INFO] [main.py:38] [GameBot] 提神线程已启动
+[2026-05-26 18:40:06,626] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:40:06,626] [INFO] [main.py:42] [GameBot] 状态机初始化完成
+[2026-05-26 18:40:06,626] [INFO] [state.py:51] [GameBot] 进入状态: StartState
+[2026-05-26 18:40:06,626] [INFO] [start.py:12] [GameBot] 检测游戏启动，准备选天赋
+[2026-05-26 18:40:06,626] [INFO] [machine.py:39] [GameBot] 状态迁移: start -> select_talent
+[2026-05-26 18:40:06,626] [INFO] [state.py:54] [GameBot] 退出状态: StartState
+[2026-05-26 18:40:06,626] [INFO] [state.py:51] [GameBot] 进入状态: SelectTalentState
+[2026-05-26 18:40:07,127] [INFO] [controller.py:32] [GameBot] 准备点击 (232, 934)
+[2026-05-26 18:40:07,127] [INFO] [connector.py:24] [GameBot] [Connector] 尝试连接设备 (1/5)
+[2026-05-26 18:40:07,351] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:40:07,426] [INFO] [connector.py:31] [GameBot] [Connector] 连接成功: 127.0.0.1:5555
+[2026-05-26 18:40:07,590] [INFO] [controller.py:35] [GameBot] 点击成功 (232, 934)
+[2026-05-26 18:40:07,767] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:07,767] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:07,768] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:07,768] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:07,768] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:40:08,146] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184008_142302.png
+[2026-05-26 18:40:08,147] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:40:08,203] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_184008_198655.png
+[2026-05-26 18:40:08,203] [INFO] [controller.py:32] [GameBot] 准备点击 (810, 553)
+[2026-05-26 18:40:08,353] [INFO] [controller.py:35] [GameBot] 点击成功 (810, 553)
+[2026-05-26 18:40:08,591] [INFO] [controller.py:32] [GameBot] 准备点击 (232, 934)
+[2026-05-26 18:40:08,995] [INFO] [controller.py:35] [GameBot] 点击成功 (232, 934)
+[2026-05-26 18:40:09,354] [INFO] [controller.py:32] [GameBot] 准备点击 (179, 929)
+[2026-05-26 18:40:09,641] [INFO] [controller.py:35] [GameBot] 点击成功 (179, 929)
+[2026-05-26 18:40:09,997] [INFO] [controller.py:32] [GameBot] 准备点击 (232, 934)
+[2026-05-26 18:40:10,278] [INFO] [controller.py:35] [GameBot] 点击成功 (232, 934)
+[2026-05-26 18:40:10,642] [INFO] [controller.py:32] [GameBot] 准备点击 (179, 1124)
+[2026-05-26 18:40:10,918] [INFO] [controller.py:35] [GameBot] 点击成功 (179, 1124)
+[2026-05-26 18:40:11,280] [INFO] [select_talent.py:20] [GameBot] 天赋选择完成
+[2026-05-26 18:40:11,280] [INFO] [machine.py:39] [GameBot] 状态迁移: select_talent -> time_allocate
+[2026-05-26 18:40:11,280] [INFO] [state.py:54] [GameBot] 退出状态: SelectTalentState
+[2026-05-26 18:40:11,280] [INFO] [state.py:51] [GameBot] 进入状态: TimeAllocateState
+[2026-05-26 18:40:11,781] [INFO] [controller.py:32] [GameBot] 准备点击 (474, 532)
+[2026-05-26 18:40:11,919] [INFO] [controller.py:32] [GameBot] 准备点击 (183, 1320)
+[2026-05-26 18:40:11,972] [INFO] [controller.py:35] [GameBot] 点击成功 (474, 532)
+[2026-05-26 18:40:12,611] [INFO] [controller.py:35] [GameBot] 点击成功 (183, 1320)
+[2026-05-26 18:40:13,474] [INFO] [time_allocate.py:15] [GameBot] 设置工作时间=4
+[2026-05-26 18:40:13,474] [INFO] [controller.py:32] [GameBot] 准备点击 (413, 975)
+[2026-05-26 18:40:13,611] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:40:13,636] [INFO] [controller.py:35] [GameBot] 点击成功 (413, 975)
+[2026-05-26 18:40:14,637] [INFO] [controller.py:32] [GameBot] 准备点击 (413, 975)
+[2026-05-26 18:40:15,680] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:40:15,816] [INFO] [controller.py:35] [GameBot] 点击成功 (413, 975)
+[2026-05-26 18:40:16,182] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:40:16,817] [INFO] [controller.py:32] [GameBot] 准备点击 (413, 975)
+[2026-05-26 18:40:17,856] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:40:17,995] [INFO] [controller.py:35] [GameBot] 点击成功 (413, 975)
+[2026-05-26 18:40:18,357] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:40:18,997] [INFO] [controller.py:32] [GameBot] 准备点击 (413, 975)
+[2026-05-26 18:40:20,032] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:40:20,170] [INFO] [controller.py:35] [GameBot] 点击成功 (413, 975)
+[2026-05-26 18:40:21,171] [INFO] [time_allocate.py:20] [GameBot] 设置研究时间至最大
+[2026-05-26 18:40:21,171] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:21,345] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:22,346] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:22,509] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:23,510] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:23,671] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:24,671] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:24,855] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:25,856] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:26,028] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:27,029] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:27,193] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:28,194] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:28,358] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:29,359] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:29,520] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:30,521] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:30,684] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:31,686] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:31,838] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:32,839] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:32,998] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:34,000] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:34,162] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:35,164] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:35,328] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:36,329] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:36,497] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:37,498] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:37,671] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:38,672] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:38,837] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:39,838] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:39,981] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:40,982] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:41,155] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:42,157] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:42,312] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:43,313] [INFO] [controller.py:32] [GameBot] 准备点击 (700, 1079)
+[2026-05-26 18:40:43,485] [INFO] [controller.py:35] [GameBot] 点击成功 (700, 1079)
+[2026-05-26 18:40:44,487] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:40:46,055] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:40:46,556] [INFO] [controller.py:32] [GameBot] 准备点击 (817, 1259)
+[2026-05-26 18:40:46,717] [INFO] [controller.py:35] [GameBot] 点击成功 (817, 1259)
+[2026-05-26 18:40:47,718] [INFO] [machine.py:39] [GameBot] 状态迁移: time_allocate -> check_plan_queue
+[2026-05-26 18:40:47,718] [INFO] [state.py:54] [GameBot] 退出状态: TimeAllocateState
+[2026-05-26 18:40:47,718] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:40:48,311] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:40:48,394] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_184048_389997.png
+[2026-05-26 18:40:48,394] [INFO] [controller.py:32] [GameBot] 准备点击 (328, 1472)
+[2026-05-26 18:40:48,569] [INFO] [controller.py:35] [GameBot] 点击成功 (328, 1472)
+[2026-05-26 18:40:49,571] [INFO] [controller.py:32] [GameBot] 准备点击 (817, 1259)
+[2026-05-26 18:40:49,721] [INFO] [controller.py:35] [GameBot] 点击成功 (817, 1259)
+[2026-05-26 18:40:50,848] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:40:50,848] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:40:50,848] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:40:50,848] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:40:51,350] [INFO] [controller.py:32] [GameBot] 准备点击 (77, 735)
+[2026-05-26 18:40:51,511] [INFO] [controller.py:35] [GameBot] 点击成功 (77, 735)
+[2026-05-26 18:40:53,443] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:53,443] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:53,444] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:53,444] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:53,444] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:40:53,538] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184053_534354.png
+[2026-05-26 18:40:53,539] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 1/5
+[2026-05-26 18:40:53,539] [INFO] [self_improve.py:44] [GameBot] 首次识别失败，依次点击 LIFE_BUTTON、YANJIU_BUTTON、SELF_IMPROVE_BUTTON 重新进入界面
+[2026-05-26 18:40:53,539] [INFO] [controller.py:32] [GameBot] 准备点击 (328, 1472)
+[2026-05-26 18:40:53,691] [INFO] [controller.py:35] [GameBot] 点击成功 (328, 1472)
+[2026-05-26 18:40:54,692] [INFO] [controller.py:32] [GameBot] 准备点击 (817, 1259)
+[2026-05-26 18:40:54,847] [INFO] [controller.py:35] [GameBot] 点击成功 (817, 1259)
+[2026-05-26 18:40:55,847] [INFO] [controller.py:32] [GameBot] 准备点击 (77, 735)
+[2026-05-26 18:40:56,011] [INFO] [controller.py:35] [GameBot] 点击成功 (77, 735)
+[2026-05-26 18:40:57,933] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:57,933] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:57,933] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:57,933] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:40:57,933] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:40:58,045] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184058_041692.png
+[2026-05-26 18:40:58,046] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 2/5
+[2026-05-26 18:41:01,484] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:01,485] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:01,485] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:01,485] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:01,485] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:41:01,602] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184101_597345.png
+[2026-05-26 18:41:01,603] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 3/5
+[2026-05-26 18:41:05,019] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:05,019] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:05,020] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:05,020] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:05,020] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:41:05,124] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184105_120425.png
+[2026-05-26 18:41:05,125] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 4/5
+[2026-05-26 18:41:08,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:08,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:08,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:08,533] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:08,533] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (677, 1152, 767, 1185), extracted digits: 
+[2026-05-26 18:41:08,648] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184108_644328.png
+[2026-05-26 18:41:08,649] [WARNING] [self_improve.py:42] [GameBot] 识别活力研究等级失败，重试 5/5
+[2026-05-26 18:41:11,649] [WARNING] [self_improve.py:70] [GameBot] 活力研究等级连续5次识别失败，自动进入下一流程
+[2026-05-26 18:41:11,771] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\vitality_level_fail_20260526_184111_766881.png
+[2026-05-26 18:41:11,771] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:41:13,331] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:41:13,831] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:13,831] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:13,832] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:14,332] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:14,495] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:15,496] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:15,656] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:16,657] [INFO] [switch_to_work.py:18] [GameBot] 识别活力研究等级失败，点击研究生按钮继续后续流程
+[2026-05-26 18:41:16,657] [INFO] [controller.py:32] [GameBot] 准备点击 (157, 935)
+[2026-05-26 18:41:16,824] [INFO] [controller.py:35] [GameBot] 点击成功 (157, 935)
+[2026-05-26 18:41:17,824] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:17,825] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:17,825] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:17,825] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:18,405] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:18,405] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:18,405] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:18,406] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:18,906] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:18,907] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:18,907] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:18,907] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:19,407] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:19,581] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:20,581] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:20,781] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:20,958] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 7 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:20,959] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 8 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:20,959] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 13 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:20,959] [INFO] [recognizer.py:91] [GameBot] OCR raw text [--psm 6 -c tessedit_char_whitelist=0123456789] = ''
+[2026-05-26 18:41:20,959] [INFO] [recognizer.py:92] [GameBot] OCR failed for region (773, 517, 863, 599), extracted digits: 
+[2026-05-26 18:41:21,372] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\ocr_number_failed_20260526_184121_368684.png
+[2026-05-26 18:41:21,373] [INFO] [tishen_task.py:20] [GameBot] 提神检查：识别结果 None，识别失败但仍继续执行
+[2026-05-26 18:41:21,494] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\tishen_skip_20260526_184121_490506.png
+[2026-05-26 18:41:21,495] [INFO] [controller.py:32] [GameBot] 准备点击 (810, 553)
+[2026-05-26 18:41:21,650] [INFO] [controller.py:35] [GameBot] 点击成功 (810, 553)
+[2026-05-26 18:41:21,783] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:21,783] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:21,783] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:21,783] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:22,366] [WARNING] [check_plan_queue.py:16] [GameBot] 规划队列圆圈未检测到，可能未进入正确页面或坐标需校准，开始修复流程
+[2026-05-26 18:41:22,456] [INFO] [recognizer.py:161] [GameBot] OCR 调试截图已保存: C:\Users\serine\auto_blackwhite_script\logs\ocr_debug\check_plan_queue_fail_1_20260526_184122_452688.png
+[2026-05-26 18:41:22,457] [INFO] [controller.py:32] [GameBot] 准备点击 (328, 1472)
+[2026-05-26 18:41:22,621] [INFO] [controller.py:35] [GameBot] 点击成功 (328, 1472)
+[2026-05-26 18:41:22,652] [INFO] [controller.py:32] [GameBot] 准备点击 (179, 929)
+[2026-05-26 18:41:23,247] [INFO] [controller.py:35] [GameBot] 点击成功 (179, 929)
+[2026-05-26 18:41:23,622] [INFO] [controller.py:32] [GameBot] 准备点击 (817, 1259)
+[2026-05-26 18:41:23,883] [INFO] [controller.py:35] [GameBot] 点击成功 (817, 1259)
+[2026-05-26 18:41:24,248] [INFO] [controller.py:32] [GameBot] 准备点击 (179, 1124)
+[2026-05-26 18:41:24,524] [INFO] [controller.py:35] [GameBot] 点击成功 (179, 1124)
+[2026-05-26 18:41:25,115] [INFO] [check_plan_queue.py:31] [GameBot] 规划队列修复成功（LIFE_BUTTON + YANJIU_BUTTON），进入下一流程
+[2026-05-26 18:41:25,115] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:25,116] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:25,116] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:25,525] [INFO] [controller.py:32] [GameBot] 准备点击 (183, 1320)
+[2026-05-26 18:41:25,616] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:25,616] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:25,616] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:25,616] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:25,685] [INFO] [controller.py:35] [GameBot] 点击成功 (183, 1320)
+[2026-05-26 18:41:26,117] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:26,325] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:26,687] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:41:27,326] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:28,376] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:41:28,511] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:28,877] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:41:29,513] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:29,513] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:29,513] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:29,513] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:30,550] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:41:30,662] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:30,662] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:30,663] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:30,663] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:31,050] [INFO] [controller.py:62] [GameBot] 准备按返回键
+[2026-05-26 18:41:31,164] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:31,164] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:31,164] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:31,164] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:31,665] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:32,595] [INFO] [controller.py:70] [GameBot] 返回键执行成功
+[2026-05-26 18:41:32,730] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:33,732] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:33,912] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:34,913] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:34,913] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:34,914] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:34,914] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:35,542] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:35,542] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:35,542] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:35,542] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:36,043] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:36,043] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:36,043] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:36,043] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:36,543] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:36,713] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:37,715] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:37,876] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:38,877] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:38,877] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:38,878] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:38,878] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:39,508] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:39,509] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:39,509] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:39,509] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:40,010] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:40,010] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:40,010] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:40,010] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:40,511] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:40,674] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:41,674] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:41,836] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:42,837] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:42,837] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:42,837] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:42,837] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:43,455] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:43,455] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:43,455] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:43,455] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:43,956] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:43,956] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:43,956] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:43,956] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:44,457] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:44,609] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:45,610] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:45,783] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:46,784] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:46,784] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:46,784] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:46,784] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:47,425] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:47,425] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:47,426] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:47,426] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:47,927] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:47,927] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:47,927] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:47,927] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:48,428] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:48,598] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:49,599] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:49,769] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:50,769] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:50,770] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:50,770] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:50,770] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:51,401] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:51,401] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:51,401] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:51,401] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:51,902] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:51,902] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:51,902] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:51,902] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:52,403] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:52,565] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:53,566] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:53,729] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:54,730] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:54,730] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:54,730] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:54,730] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:55,372] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:55,372] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:55,372] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:55,372] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:55,873] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:55,873] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:55,873] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:55,873] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:41:56,374] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:41:56,535] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:41:57,536] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:41:57,696] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:41:58,697] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:41:58,697] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:41:58,697] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:41:58,698] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState
+[2026-05-26 18:41:59,318] [INFO] [check_plan_queue.py:13] [GameBot] 规划队列已启用
+[2026-05-26 18:41:59,318] [INFO] [machine.py:39] [GameBot] 状态迁移: check_plan_queue -> self_improve
+[2026-05-26 18:41:59,318] [INFO] [state.py:54] [GameBot] 退出状态: CheckPlanQueueState
+[2026-05-26 18:41:59,318] [INFO] [state.py:51] [GameBot] 进入状态: SelfImproveState
+[2026-05-26 18:41:59,818] [WARNING] [self_improve.py:29] [GameBot] 已达到活力研究等级识别失败阈值，跳过后续识别
+[2026-05-26 18:41:59,819] [INFO] [machine.py:39] [GameBot] 状态迁移: self_improve -> switch_to_work
+[2026-05-26 18:41:59,819] [INFO] [state.py:54] [GameBot] 退出状态: SelfImproveState
+[2026-05-26 18:41:59,819] [INFO] [state.py:51] [GameBot] 进入状态: SwitchToWorkState
+[2026-05-26 18:42:00,319] [INFO] [controller.py:32] [GameBot] 准备点击 (82, 1254)
+[2026-05-26 18:42:00,483] [INFO] [controller.py:35] [GameBot] 点击成功 (82, 1254)
+[2026-05-26 18:42:01,484] [INFO] [controller.py:32] [GameBot] 准备点击 (444, 735)
+[2026-05-26 18:42:01,644] [INFO] [controller.py:35] [GameBot] 点击成功 (444, 735)
+[2026-05-26 18:42:02,645] [INFO] [switch_to_work.py:23] [GameBot] 已切换到工作-科研界面
+[2026-05-26 18:42:02,646] [INFO] [machine.py:39] [GameBot] 状态迁移: switch_to_work -> check_plan_queue
+[2026-05-26 18:42:02,646] [INFO] [state.py:54] [GameBot] 退出状态: SwitchToWorkState
+[2026-05-26 18:42:02,646] [INFO] [state.py:51] [GameBot] 进入状态: CheckPlanQueueState

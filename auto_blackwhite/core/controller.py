@@ -29,31 +29,48 @@ class GameController:
     # 操作层
 
     def click(self, x, y, retry=3):
+        logger.info(f"准备点击 ({x}, {y})")
         def _(device):
             device.click(x, y)
+            logger.info(f"点击成功 ({x}, {y})")
             logger.debug(f"click ({x}, {y})")
+            time.sleep(0.5)
             return True
 
-        return self._safe_exec(_, "click", retry)
+        result = self._safe_exec(_, "click", retry)
+        if not result:
+            logger.warning(f"点击失败 ({x}, {y})")
+        return result
 
     def swipe(self, fx, fy, tx, ty, duration=0.5, retry=2):
+        logger.info(f"准备滑动 ({fx},{fy}) -> ({tx},{ty})")
         def _(device):
             device.swipe(fx, fy, tx, ty, duration=duration)
+            logger.info(f"滑动成功 ({fx},{fy}) -> ({tx},{ty})")
             logger.debug(f"swipe ({fx},{fy}) -> ({tx},{ty})")
             return True
 
-        return self._safe_exec(_, "swipe", retry)
+        result = self._safe_exec(_, "swipe", retry)
+        if not result:
+            logger.warning(f"滑动失败 ({fx},{fy}) -> ({tx},{ty})")
+        return result
 
     def safe_click(self, x, y, retry=3):
         return self.click(x, y, retry)
 
     def press_back(self):
+        logger.info("准备按返回键")
         def _(device):
             device.press("back")
-            time.sleep(0.2)
+            time.sleep(0.5)
             return True
 
-        return self._safe_exec(_, "back", retry=1)
+        result = self._safe_exec(_, "back", retry=1)
+        if result:
+            logger.info("返回键执行成功")
+        else:
+            logger.warning("返回键执行失败")
+        return result
 
     # 视觉相关（待完善）
 

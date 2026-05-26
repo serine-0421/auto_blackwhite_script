@@ -17,19 +17,18 @@ class TishenTask(BaseTask):
         # 识别圆圈数字
         num = self.recognizer.ocr_number(TISHEN_CIRCLE_REGION)
         if num is None or not isinstance(num, int) or num <= 0:
-            logger.info(f"提神检查：识别结果 {num}，跳过执行")
+            logger.info(f"提神检查：识别结果 {num}，识别失败但仍继续执行")
             self.recognizer.save_debug_screenshot(TISHEN_CIRCLE_REGION, prefix="tishen_skip")
-            return
-
-        logger.info(f"发现提神次数: {num}")
+        else:
+            logger.info(f"发现提神次数: {num}")
         # 点击圆圈
         self.controller.safe_click(*TISHEN_CIRCLE_CLICK)
         time.sleep(0.5)
         # 点击前两个提神选项
         for pos in TISHEN_OPTIONS:
             self.controller.safe_click(*pos)
-            time.sleep(0.3)
+            time.sleep(0.5)
         # 提神完成后，按返回键回到主界面（可能需要多次）
         for _ in range(3):
             self.controller.press_back()
-            time.sleep(0.3)
+            time.sleep(0.5)

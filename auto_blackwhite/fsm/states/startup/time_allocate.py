@@ -15,11 +15,12 @@ class TimeAllocateState(State):
         logger.info("设置工作时间=4")
         for _ in range(4):
             controller.safe_click(*WORK_TIME_BUTTON)
-            time.sleep(0.2)
-        # 研究加到最大
+            time.sleep(0.5)
+        # 设置研究时间至最大
+        logger.info("设置研究时间至最大")
         for _ in range(MAX_CLICK_COUNT):
             controller.safe_click(*RESEARCH_PLUS_BUTTON)
-            time.sleep(0.1)
+            time.sleep(0.5)
         # 关闭时间分配界面（按返回或点击叉）
         controller.press_back()
         time.sleep(0.5)

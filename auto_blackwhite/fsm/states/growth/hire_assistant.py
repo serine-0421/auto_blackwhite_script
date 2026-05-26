@@ -2,14 +2,14 @@
 # fsm/states/hire_assistant.py
 import time
 from fsm.state import State
-from config.settings import LIFE_BUTTON, EMPLOY_BUTTON, RESEARCH_ASSISTANT, EXPENDITURE_REGION, TARGET_EXPENDITURE
+from config.settings import DAILY_BUTTON, EMPLOY_BUTTON, RESEARCH_ASSISTANT, EXPENDITURE_REGION, TARGET_EXPENDITURE
 import logging
 logger = logging.getLogger("GameBot")
 
 class HireAssistantState(State):
     def execute(self, context, controller, recognizer):
         # 进入生活->雇佣
-        controller.safe_click(*LIFE_BUTTON)
+        controller.safe_click(*DAILY_BUTTON)
         time.sleep(0.5)
         controller.safe_click(*EMPLOY_BUTTON)
         time.sleep(0.5)
@@ -23,8 +23,9 @@ class HireAssistantState(State):
             # 返回主界面（可能需要多次返回）
             for _ in range(3):
                 controller.press_back()
-                time.sleep(0.3)
-            return "check_position"
+                time.sleep(0.5)
+            # 先切换到工作-科研界面，再检查规划队列和后续等级
+            return "switch_to_work"
         else:
             logger.warning(f"支出{exp}不等于503，重试")
             # 记录错误日志
