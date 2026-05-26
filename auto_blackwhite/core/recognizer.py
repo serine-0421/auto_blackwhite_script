@@ -1,9 +1,11 @@
 # 图像识别（数字OCR、规划队列圆圈检测、职位文字）
 
+import os
 import cv2
 import numpy as np
 import pytesseract
 import logging
+from datetime import datetime
 
 logger = logging.getLogger("GameBot")
 OCR_TIMEOUT = 10
@@ -80,6 +82,7 @@ class Recognizer:
             return int(best_digits)
         
         logger.debug(f"OCR failed for region {region}, raw text: {text}")
+        self._save_debug_screenshot(region, prefix="ocr_number_failed")
         return None
 
     # 圆形检测
@@ -130,12 +133,38 @@ class Recognizer:
             return False
         return self.has_circle(img, region)
 
+    def _save_debug_screenshot(self, region, prefix="ocr_debug"):
+        img = self.controller.screenshot()
+        if img is None:
+            logger.warning("无法保存调试截图：截图失败")
+            return
+
+        debug_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'logs', 'ocr_debug'))
+        os.makedirs(debug_dir, exist_ok=True)
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
+        crop_path = os.path.join(debug_dir, f"{prefix}_{timestamp}.png")
+
+        try:
+            crop = self._crop(img, region)
+            if hasattr(crop, 'save'):
+                crop.save(crop_path)
+            else:
+                cv2.imwrite(crop_path, crop)
+            logger.info(f"OCR 调试截图已保存: {crop_path}")
+        except Exception as e:
+            logger.warning(f"保存 OCR 调试截图失败: {e}")
+
+    def save_debug_screenshot(self, region, prefix="ocr_debug"):
+        return self._save_debug_screenshot(region, prefix)
+
     def ocr_number(self, region):
         img = self.controller.screenshot()
         if img is None:
+            logger.warning("ocr_number: screenshot failed")
             return None
         try:
             return self.read_number(img, region)
         except Exception as e:
             logger.warning(f"ocr_number failed for region {region}: {e}")
+            self._save_debug_screenshot(region, prefix="ocr_number_exception")
             return None
